@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500&display=swap');
+
+/* global */
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+body {
+    background: #e8e8e8;
+    color: #222831;
+
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+}
+
+/* header */
+
+header {
+    background: #343434;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 70px 40px 70px;
+}
+
+header img {
+    width: 199px;
+    height: 39px;
+}
+
+header ul {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    padding: 10px;
+    margin-right: 10px; /* hendy */
+}
+
+header li a:hover {
+    color: #f05454;
+}
+
+.banner {
+    background-image: url('../img/banner-home.png');
+    top: 0;
+    height: 300px;
+}
