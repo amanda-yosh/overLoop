@@ -12,6 +12,10 @@ li {
     list-style: none;
 }
 
+ul {
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: #222831;
@@ -56,10 +60,19 @@ header li a {
 
     padding: 10px;
     margin-right: 10px; /* hendy */
-}
 
+    background:
+    linear-gradient(to bottom, #fff 0%, #fff 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    transition: background-size .2s;
+}
+  
 header li a:hover {
-    color: #f05454;
+    color: #F05454;
+
+    background-size: 4px 50px;
 }
 
 .banner {
@@ -87,17 +100,21 @@ footer a, footer p {
     font-weight: normal;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
+
 .info {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    gap: 90px;
 }
 
 .redes-sociais ul {
     display: flex;
-
-    padding: 0;
 }
 
 .redes-sociais ul li {
@@ -111,4 +128,43 @@ footer a, footer p {
 
     margin-top: 40px;
     margin-right: 18px;
+}
+
+/* media */
+
+@media(max-width:1070px) {
+    .info {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 40px;
+    }
+    .info h3 {
+        text-align: center;
+    }
+    .info p, .info a {
+        text-align: center;
+    }
+    .redes-sociais ul li:first-child {
+        margin-left: 18px;
+    }
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+
+        padding: 45px 15px 40px 15px;
+    }
+}
+
+@media(max-width: 670px) {
+    .copy {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
