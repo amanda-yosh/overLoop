@@ -11,10 +11,14 @@ section.top {
 
 section.top h1 {
     padding: 12px;
-    border-bottom: 3px solid #222831 ;
     font-family: 'Antic Slab', serif;
     font-size: 36px;
     font-weight: normal;
+}
+
+section hr {
+    width: 150px;
+    border: 2px solid #343434;
 }
 
 section.top p {
@@ -23,14 +27,14 @@ section.top p {
 }
 
 section.top .formulario {
-    width: 800px; 
+    width: 60vw; 
     padding: 8px;
     background-color: #FFFFFF;
     border-radius: 10px;
 
-    display: grid;
-    grid: auto-flow / 1fr 1fr 60px;
-   
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 section.top .formulario img.icon  {
@@ -54,9 +58,11 @@ section.top .formulario #lupa  {
 input {
     border: 0;
     width: 80%;
-    padding: 10px;
     outline: none;
+    font-size: 16px;
+    min-width:  220px;
 }
+
 
 button#search {
     width: 55px;
@@ -64,4 +70,76 @@ button#search {
     background: #F05454;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+section.content {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.content .job img {
+    width: 70px;
+    position: relative;
+    top: -60px;
+    left: 10px;
+}
+
+section.content .job-info {
+    width: 340px;
+    height: 250px;
+    padding: 20px;
+    margin: 30px 30px 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+section.content .text {
+    padding: 20px 10px 10px;
+    position: relative;
+    top: -70px;
+}
+
+
+section.content .text h2{ 
+    font-family: 'Antic Slab', serif;
+}
+
+section.content .text p{ 
+    padding: 12px 0;
+    color: #AAA9A9;
+}
+
+section.content .text .location{ 
+    padding: 12px 0;
+    color: #F05454;
+    font-weight: 600;
+}
+
+@media(max-width:1070px) {
+    .info {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 40px;
+    }
+    .info h3 {
+        text-align: center;
+    }
+    .info p, .info a {
+        text-align: center;
+    }
+    .redes-sociais ul li:first-child {
+        margin-left: 18px;
+    }
 }
