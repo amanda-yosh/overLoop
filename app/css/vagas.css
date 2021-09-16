@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+section.top {
+    padding: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.top h1 {
+    padding: 12px;
+    border-bottom: 3px solid #222831 ;
+    font-family: 'Antic Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+section.top p {
+    padding: 30px;
+    font-size: 18px;
+}
+
+section.top .formulario {
+    width: 800px; 
+    padding: 8px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+    display: grid;
+    grid: auto-flow / 1fr 1fr 60px;
+   
+}
+
+section.top .formulario img.icon  {
+    width: 40px; 
+    height: 40px;
+    margin: 0 10px;
+   
+}
+
+section.top .formulario #lupa  {
+    width: 40px; 
+    height: 40px;
+   
+}
+
+.formulario label {
+    display: flex;
+    text-align: center;
+}
+
+input {
+    border: 0;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+}
+
+button#search {
+    width: 55px;
+    height: 50px;
+    background: #F05454;
+    border: none;
+    border-radius: 10px;
+}
