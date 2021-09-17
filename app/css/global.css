@@ -145,6 +145,26 @@ footer a:hover {
     margin-right: 18px;
 }
 
+/************************************/
+
+.paginacao button {
+    border: none;
+    background-color: #F05454;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+/************************************/
+
+
 /* media */
 
 @media(max-width:1070px) {
