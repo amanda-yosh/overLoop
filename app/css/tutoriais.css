@@ -1,14 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
 * {
-    margin: 0;
-    /* padding: 0; */
     box-sizing: border-box;
+}
+
+header {
+    color: #222831;
+    max-width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 body {
     background: #e8e8e8;
+    margin: 0;
+    padding: 0;
     color: #222831;
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
-    }
+    max-width: 100%;
+}
+
+section.banner {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    background-image: url('../img/tutoriais-foto1-banner.png');
+}
+
+section.tutoriais {
+    color: #222831;
+    font-family: 'Antic Slab', serif;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+}
+
+section.tutoriais h2 {
+    text-align: center;
+    margin: 30px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222831;
+    display: inline-block;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.container li {
+    padding: 2px;
+    max-width: 100%;
+}
+
+section.space1 {
+    background-color: #e8e8e8;
+    padding: 50px;
+    max-width: 100%;
+}
+
+section.tutoriais article {
+    background-color: #fff;
+    margin: 60px 0;
+}
+
+
+section.tutoriais article h3 {
+    font-family: 'Antic Slab', serif;
+    max-width: 100%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    border-bottom: 3px solid #222831;
+    display: inline-block;
+}
+
+section.tutoriais article p {
+    text-align: justify;
+    padding: 20px 0 40px 0;
+    max-width: 100%;
+}
+
+section.tutoriais article img {
+    width: 200px;
+    max-width: 100%;
+}
+
+section.tutoriais article a {
+    text-decoration: underline;
+    color: #F05454;
+    max-width: 100%;
+
+}
+
+section.tutoriais article li {
+    padding: 2px;
+    max-width: 100%;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.paginacao button {
+    border: none;
+    background-color: #F05454;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+
+section.outras-fontes {
+    padding: 80px 0;
+}
+
+section.outras-fontes .fontes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 630px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container h2{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+
+}
