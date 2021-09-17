@@ -48,6 +48,12 @@ h1, h2 {
     margin-bottom: 15px;
 }
 
+h2 {
+    display: inline-block;
+    border-bottom: 3px solid #222831;
+    padding-bottom: 10px;
+}
+
 p {
     font-family: Urbanist;
     font-size: 18px;
@@ -60,12 +66,12 @@ p {
     /* margin-left: 20px; */
 }
 
-hr {
+/* hr {
     width: 150px;
     border: 2px solid #222831;
 
     margin-bottom: 40px;
-}
+} */
 
 .carousel {
     position: relative;
@@ -127,6 +133,18 @@ h1 {
 /* missao e valores */
 .missao-valores {
     padding: 100px 0 90px 0;
+}
+
+.missao-valores .text {
+    text-align: end;
+}
+
+.missao-valores .text p {
+    text-align: end;
+}
+
+.missao-valores .text>p {
+    margin-bottom: 30px;
 }
 
 /* vagas */
