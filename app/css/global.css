@@ -37,13 +37,27 @@ body {
 /* header */
 
 header {
-    background: #343434;
+    /* menu fixo */
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 90;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 45px 70px 40px 70px;
+}
+
+header.transparente {
+    /* background transparente */
+    background: linear-gradient(to top, rgba(255,0,0,0), rgba(52, 52, 52, 1));
+}
+
+header.solid { 
+    background: #343434;
 }
 
 header ul {
@@ -54,6 +68,12 @@ header ul {
 }
 
 header li a {
+    background: #fff;
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
@@ -61,8 +81,7 @@ header li a {
     padding: 10px;
     margin-right: 10px; /* hendy */
 
-    background:
-    linear-gradient(to bottom, #fff 0%, #fff 100%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
     background-size: 4px 4px;

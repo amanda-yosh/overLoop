@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap');
 
 /* gerais */
 .container {
@@ -18,6 +18,8 @@ section.text {
 button {
     border: none;
     text-decoration: none;
+
+    cursor: pointer;
 }
 
 button.call-to-action {
@@ -37,7 +39,7 @@ button.call-to-action {
 }
 
 button.call-to-action:hover {
-    background: #30475E;
+    /* background: #30475E; */
     font-size: 24px;
 }
 
@@ -102,8 +104,8 @@ hr {
 }
 
 h1 {
-    /* font-family: Antic Slab; */
-    font-family: 'Playfair Display SC', serif;
+    font-family: Antic Slab;
+    /* font-family: 'Playfair Display SC', serif; */
     /* font-size: 56px; */
     font-size: 6rem;
     font-weight: 400;
