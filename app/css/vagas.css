@@ -33,7 +33,6 @@ section.top .formulario {
     border-radius: 10px;
 
     display: flex;
-    flex-wrap: wrap;
    justify-content: space-between;
 }
 
@@ -42,6 +41,17 @@ section.top .formulario img.icon  {
     height: 40px;
     margin: 0 10px;
    
+}
+
+section.top .formulario .input-localizacao img.icon  {
+    margin: 3px 10px;
+   
+}
+
+.input-cargo, 
+.input-localizacao {
+    display: flex;
+    flex-direction: row;
 }
 
 section.top .formulario #lupa  {
@@ -71,13 +81,12 @@ button#search {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    align-self: flex-end;
 }
 
 section.content {
     width: 100vw;
     padding: 0;
-    margin: 0;
+    margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,20 +135,22 @@ section.content .text .location{
 }
 
 @media(max-width:1070px) {
-    .info {
-        flex-wrap: wrap;
-        flex-direction: column;
+    section.top .formulario {
+        width: 40vw; 
+        min-width: 340px;
+        padding: 8px;
+        background-color: none;
+        border-radius: 10px; 
+    
+        
+        display: flex;
         align-items: center;
-
-        gap: 40px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    .info h3 {
-        text-align: center;
-    }
-    .info p, .info a {
-        text-align: center;
-    }
-    .redes-sociais ul li:first-child {
-        margin-left: 18px;
+    
+    label, input {
+        margin: 5px;
     }
 }
