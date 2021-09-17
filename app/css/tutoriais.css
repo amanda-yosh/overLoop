@@ -45,6 +45,7 @@ section.tutoriais {
 section.tutoriais h2 {
     text-align: center;
     margin: 30px auto;
+    padding: 30px 0 10px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
@@ -116,28 +117,6 @@ section.tutoriais article li {
     padding: 2px;
     max-width: 100%;
 }
-
-.paginacao {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-}
-
-.paginacao button {
-    border: none;
-    background-color: #F05454;
-    color: #fff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 6px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    max-width: 100%;
-}
-
 
 section.outras-fontes {
     padding: 80px 0;
