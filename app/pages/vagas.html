@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/vagas.css">
 </head>
 <body>
-    <header>
+
+    <header class="solid">
         <img class="logo" src="../img/overLoop-logo-white.png" alt="Logo da overLoop">
         <nav>
             <ul>
@@ -27,14 +28,21 @@
         <hr>
         <p>Encontre seu emprego dos sonhos e dê match!</p>
         <div class="formulario">
+            <div class="input-cargo">
                 <label for="cargo-empresa">
                     <img class="icon" src="../img/vaga-mala-icon.svg" alt="Ícone mala">
-                    <input id="cargo-empresa" type="text" placeholder="Filtrar por cargo ou empresa">
                 </label>
+                <input id="cargo-empresa" type="text" placeholder="Filtrar por cargo ou empresa">
+            </div>
+                
+            <div class="input-localizacao">
                 <label for="localizacao">
                     <img class="icon" src="../img/vagas-localizacao-icon.svg" alt="Ícone localização">
-                    <input id="localizacao" type="text" placeholder="Filtrar por localização">
                 </label>
+                <input id="localizacao" type="text" placeholder="Filtrar por localização">
+            </div>
+               
+                
             <button id="search">
                 <img id="lupa" src="../img/vagas-lupa-icon.svg" alt="Ícone lupa">
             </button>
@@ -160,15 +168,26 @@
                 </div>
             </div>
         </article>
-
     </section>
     
+    <section class="container-paginacao">
+        <div class="paginacao">
+            <button class="button1">1</button>
+            <button class="button2">2</button>
+            <button class="button3">3</button>
+            <button class="button4">4</button>
+            <button class="button5">5</button>
+            <button class="button6">6</button>
+        </div>
+    </section>
+    
+
     <footer>
         <section class="info">
             <img class="logo" src="../img/overLoop-logo-white.png" alt="Logo da overLoop">
             <div class="contato">
                 <h3>Contato</h3>
-                <p>Broad St, Newark, NJ 07102 - USA</p>    
+                <p><a href="https://goo.gl/maps/EYHFqbz6LECyFk8p6">Broad St, Newark, NJ 07102 - USA</a></p>
                 <p><a href="tel:+1973854555548">+1 (973) 854-555-548</a></p>
                 <p><a href="mailto: contact@overloop.com">contact@overloop.com</a></p>
             </div>
