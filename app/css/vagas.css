@@ -77,6 +77,9 @@ input {
     min-width:  220px;
 }
 
+input::placeholder {
+    color: #AAA9A9;
+}
 
 button#search {
     width: 55px;
