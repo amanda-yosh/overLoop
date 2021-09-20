@@ -3,6 +3,46 @@
 h1, h2, h3, h4, h5 {
     font-family: 'Antic Slab', serif;
 }
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 36px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 30px 0 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222831;
+    display: inline-block;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    
+
+    cursor: pointer;
+}
+
+
+button.call-to-action {
+    width: 200px;
+    height: 50px;
+
+    background: #F05454;
+    border-radius: 16px;
+
+    color: #fff;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+}
+
 
 .banner {
     background-image: url(../img/inspiracoes-banner.png);
@@ -121,8 +161,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .fundadoras .container .titulo img {
-    width: 235px;
+    width: 240px;
     height: 77px;
+    margin-top: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222831;
+ 
 }
 
 .fundadoras .container .galery {
@@ -130,9 +176,20 @@ h1, h2, h3, h4, h5 {
     align-items: center;
 }
 
-.fundadoras .container .galery figure{
+.fundadoras .container .galery figure {
     padding: 52px;
     text-align: center;
     font-size: 18px;
     text-indent: 0;
+}
+
+.nps .container {
+    display: flex;
+    align-items: center;
+}
+
+.nps p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
 }
