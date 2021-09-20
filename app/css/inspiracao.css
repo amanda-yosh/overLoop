@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Antic Slab', serif;
+}
+.banner {
+    background-image: url(../img/inspiracoes-banner.png);
+    width: 100%;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    padding: 5px;
+    
+    letter-spacing: 10px;
+}
+
+.banner p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .carousel {
+    width: 505;
+    position: relative;
+    
+}
+
+.container .carousel img {
+    width: 450px;
+}
+
+
+.container .carousel .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .carousel .controls button {
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container .carousel .controls button img {
+    width: 30px;
+}
+
+.container .carousel-intercalado{
+    width: 505;
+    background-color: rgba(240, 84, 84, 0.1);
+    position: relative;
+}
+
+.container .carousel-intercalado .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .carousel-intercalado .controls button {
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container .carousel-intercalado .controls button img {
+    width: 30px;
+}
