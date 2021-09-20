@@ -26,8 +26,10 @@ button.call-to-action {
     width: 200px;
     height: 50px;
 
-    background: #F05454;
+    background: #222831;
+
     border-radius: 16px;
+    
 
     color: #fff;
     font-family: Urbanist;
@@ -36,11 +38,12 @@ button.call-to-action {
     font-weight: 500;
     line-height: 29px;
     text-align: center;
+
+    transition: all .2s linear;
 }
 
 button.call-to-action:hover {
-    /* background: #30475E; */
-    font-size: 24px;
+    background: #F05454;
 }
 
 h1, h2 {
@@ -163,9 +166,9 @@ h1 {
     flex-direction: column;
 }
 
-.pessoas-imagens {
+/* .pessoas-imagens div {
     max-width: 1080px;
-}
+} */
 
 .pessoas-imagens div {
     background-repeat: no-repeat;
@@ -183,11 +186,47 @@ h1 {
         "foto-1 foto-4 foto-5"
         "foto-3 foto-4 foto-5"; 
 }
-.foto-5 { grid-area: foto-5;}
 .foto-4 { grid-area: foto-4; }
 .foto-2 { grid-area: foto-2; }
 .foto-1 { grid-area: foto-1; }
 .foto-3 { grid-area: foto-3; }
+.foto-5 {
+    grid-area: foto-5;
+
+    width: 100%;
+    height: 500px;
+    min-height: 200px;
+}
+
+.foto {
+    -webkit-box-shadow: 1px 4px 15px 5px rgba(0,0,0,0.4); 
+    box-shadow: 1px 4px 15px 5px rgba(0,0,0,0.4);
+}
+.frase-inspiracao {
+    background-color: #f054547c;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.frase-inspiracao:hover {
+    opacity: 1;
+}
+
+p.frase-inspiracao {
+    color: #fff;
+
+    font-family: 'Antic Slab';
+}
+
+p.frase-inspiracao cite {
+    font-weight: bold;
+}
 
 /* mulheres destaque */
 .mulheres {
@@ -214,4 +253,17 @@ h1 {
 }
 .tutoriais .container {
     flex-direction: column;
+}
+
+/* ================================ */
+/* MEDIA */
+@media(max-width: 1070px) {
+    .pessoas-imagens {
+        display: flex;
+        flex-direction: column;
+    }
+    .pessoas-imagens div {
+        width: 100%;
+        height: 200px;
+    }
 }
