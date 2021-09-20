@@ -3,6 +3,7 @@
 h1, h2, h3, h4, h5 {
     font-family: 'Antic Slab', serif;
 }
+
 .banner {
     background-image: url(../img/inspiracoes-banner.png);
     width: 100%;
@@ -37,6 +38,7 @@ h1, h2, h3, h4, h5 {
     
 }
 
+/* carrosel */
 .container .carousel {
     width: 505;
     position: relative;
@@ -46,7 +48,6 @@ h1, h2, h3, h4, h5 {
 .container .carousel img {
     width: 450px;
 }
-
 
 .container .carousel .controls {
     position: absolute;
@@ -102,4 +103,36 @@ h1, h2, h3, h4, h5 {
 
 .container .carousel-intercalado .controls button img {
     width: 30px;
+}
+
+/* pagina fundadoras */
+ .fundadoras .container {
+    align-items: center;
+    
+ }
+
+.fundadoras .container .titulo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 400px;
+    line-height: 42px;
+   
+}
+
+.fundadoras .container .titulo img {
+    width: 235px;
+    height: 77px;
+}
+
+.fundadoras .container .galery {
+    display: flex;
+    align-items: center;
+}
+
+.fundadoras .container .galery figure{
+    padding: 52px;
+    text-align: center;
+    font-size: 18px;
+    text-indent: 0;
 }
