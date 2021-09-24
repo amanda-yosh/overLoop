@@ -46,15 +46,10 @@ section.content img {
     padding: 0;
 }
 
-@media(max-width:1070px) {
-    section.content img{
-        width: auto;
-    }
 
 
-    @media(max-width: 800px) {
+@media(max-width: 800px) {
         section.top {
             margin: 190px 0 0;
         }
-    }
 }

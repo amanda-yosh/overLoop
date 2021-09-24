@@ -137,7 +137,7 @@ section.avaliacao h2 {
     display: inline-block;
     font-size: 14px;
     margin: 60px 30px 90px 30px;
-    border-radius: 4%;
+    border-radius: 10px;
     cursor: pointer;
     max-width: 100%;
     font-family: 'Urbanist', sans-serif;
