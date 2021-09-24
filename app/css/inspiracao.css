@@ -23,11 +23,8 @@ h2 {
 button {
     border: none;
     text-decoration: none;
-    
-
     cursor: pointer;
 }
-
 
 button.call-to-action {
     width: 200px;
@@ -45,13 +42,18 @@ button.call-to-action {
     text-align: center;
 }
 
+button.call-to-action:hover {
+    font-size: 24px;
+}
 
 .banner {
     background-image: url(../img/inspiracoes-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 2100px;
+    max-width: 100%;
+    margin: 0 auto;
     height: 505px;
     display: flex;
     justify-content: center;
@@ -76,27 +78,44 @@ button.call-to-action {
     font-weight: 400;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    
-}
-
 /* carrosel */
-
 .profissoes h2 {
-    text-align: center;
+   display: block;
+   margin-left: 50px;
 }
+
 .profissoes .container {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.profissoes .container .info {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.profissoes .container .info .fotos img{
+    width: 450px;
+    height: 450px;
+    max-width: 100%;
 }
 
 .profissoes .container .info .texto {
     display: flex;
     flex-direction: column;
+    width: 430px;
+    max-width: 100%;
 }
 
 .profissoes .container .info .texto .titulo {
@@ -109,14 +128,13 @@ button.call-to-action {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 50px;
+    padding: 150px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .profissoes .container .controls button {
-
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -129,11 +147,76 @@ button.call-to-action {
 }
 
 /* noticias */
+.noticias {
+    background-color: rgba(240, 84, 84, 0.1);
+    text-align: center;
+}
+
+.noticias h2 {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+}
+
+.noticias .container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+
+.noticias .container article{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.noticias .container article .image{
+    background-color: #B1B1B1;
+    width: 270px;
+    height: 270px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.noticias .container article .info{
+    max-width: 50%;
+    gap: 20px;
+}
+
+.noticias .container article .info p{
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.noticias .container article .info p a {
+    color: #F05454;
+}
+
+.noticias .container article .info p a:hover {
+    text-decoration: underline;
+}
+
+.noticias .container article .text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
 
 /* pagina fundadoras */
 .fundadoras .container {
-align-items: center;
-
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .fundadoras .container .titulo {
@@ -141,8 +224,7 @@ align-items: center;
     align-items: center;
     font-size: 32px;
     font-weight: 400px;
-    line-height: 42px;
-   
+    line-height: 42px; 
 }
 
 .fundadoras .container .titulo img {
@@ -153,7 +235,6 @@ align-items: center;
     padding-right: 25px;
     padding-bottom: 10px;
     border-bottom: 3px solid #222831;
- 
 }
 
 .fundadoras .container .galery {
@@ -172,10 +253,16 @@ align-items: center;
 .nps .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto; 
 }
 
 .nps p {
     font-size: 16px;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
 }
