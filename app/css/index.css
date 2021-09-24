@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&display=swap');
 
+/* ================================ */
 /* gerais */
 .container {
     width: 80%;
@@ -9,17 +10,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    gap: 4rem;
 }
 
-section.text {
+.text {
+    max-width: calc(50vw);
     width: 620px;
 }
 
-button {
-    border: none;
-    text-decoration: none;
-
-    cursor: pointer;
+img {
+    max-width: 100%; /* imagem nunca maior que seu tamanho original */
+    height: auto;
 }
 
 button.call-to-action {
@@ -30,13 +32,9 @@ button.call-to-action {
 
     border-radius: 16px;
     
-
     color: #fff;
-    font-family: Urbanist;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1.2rem;
     font-weight: 500;
-    line-height: 29px;
     text-align: center;
 
     transition: all .2s linear;
@@ -48,7 +46,19 @@ button.call-to-action:hover {
 
 h1, h2 {
     font-family: 'Antic Slab', serif;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    /* font-family: 'Playfair Display SC', serif; */
+    /* font-size: 56px; */
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #fff;
+
+    padding-top: 530px;
 }
 
 h2 {
@@ -63,85 +73,40 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 55px;
-    letter-spacing: 0em;
     text-align: left;
-
-    /* margin-left: 20px; */
 }
 
-/* hr {
-    width: 150px;
-    border: 2px solid #222831;
+section:not(.intro) {
+    padding: 100px 0 90px 0;
 
-    margin-bottom: 40px;
-} */
-
-.carousel {
-    position: relative;
 }
 
-.carousel .controls {
-    position: absolute; /* flutuando em relação ao positivo relative do carousel */
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+section.sobre,
+section.vagas,
+section.mulheres,
+section.tutoriais {
+    background: rgba(240, 84, 84, 0.1); 
 }
 
-.carousel .controls button {
-    background-color: #e8e8e8;
-    border: none;
-    padding: 10px;
-
-    cursor: pointer;
+.pessoas .container,
+.mulheres .container,
+.tutoriais .container {
+    flex-direction: column;
 }
 
-.carousel .controls button img {
-    width: 40px;
-}
-
+/* ================================ */
 /* intro */
 .intro {
     width: 100%;
     height: 765px;
     background-image: url(../img/banner-home.png);
-}
-
-h1 {
-    font-family: Antic Slab;
-    /* font-family: 'Playfair Display SC', serif; */
-    /* font-size: 56px; */
-    font-size: 6rem;
-    font-weight: 400;
-    line-height: 67px;
-    letter-spacing: 0.2em;
-    text-align: center;
-    color: #fff;
-
-    padding-top: 650px;
-}
-
-/* sobre */
-.sobre {
-    background: rgba(240, 84, 84, 0.1);
-
-    padding: 100px 0 90px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* missao e valores */
-.missao-valores {
-    padding: 100px 0 90px 0;
-}
-
-.missao-valores .text {
-    text-align: end;
-}
-
+.missao-valores .text,
 .missao-valores .text p {
     text-align: end;
 }
@@ -151,25 +116,12 @@ h1 {
 }
 
 /* vagas */
-.vagas {
-    background: rgba(240, 84, 84, 0.1);
-
-    padding: 100px 0 90px 0;
+.vagas .text>p {
+    margin-bottom: 30px;
 }
 
-/* pessoas que inspiram */
-.pessoas {
-    padding: 100px 0 90px 0;
-}
-
-.pessoas .container {
-    flex-direction: column;
-}
-
-/* .pessoas-imagens div {
-    max-width: 1080px;
-} */
-
+/* ================================ */
+/* painel de pessoas */
 .pessoas-imagens div {
     background-repeat: no-repeat;
     background-position: center;
@@ -202,6 +154,7 @@ h1 {
     -webkit-box-shadow: 1px 4px 15px 5px rgba(0,0,0,0.4); 
     box-shadow: 1px 4px 15px 5px rgba(0,0,0,0.4);
 }
+
 .frase-inspiracao {
     background-color: #f054547c;
     height: 100%;
@@ -228,15 +181,84 @@ p.frase-inspiracao cite {
     font-weight: bold;
 }
 
-/* mulheres destaque */
-.mulheres {
-    padding: 50px 0 90px 0;
+/* ================================= */
+/* carousel-wrapper */
+.carousel-wrapper img {
+    width: 50%;
+}
+.carousel-wrapper {
+    height: 300px;
+    width: 1000px;
+    max-width: 100%;
+    position: relative;
+  
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+.carousel-item{
+    position: absolute;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+.arrow-prev{
+    left: 0;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+    right: 0;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+}
+.light{
+    color:white;
 }
 
-.mulheres .container {
-    flex-direction: column;
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+  
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+  
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+}
+  
+*:target ~ .item-1 {
+    opacity: 0;
+}
+  
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+  
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
 }
 
+/* ================================ */
 /* code-break */
 .code-break {
     width: 100%;
@@ -245,19 +267,123 @@ p.frase-inspiracao cite {
     background-image: url("../img/code-img-home.png");
 }
 
-/* tutoriais */
-.tutoriais {
-    background: rgba(240, 84, 84, 0.1);
-
-    padding: 100px 0 90px 0;
+/* ================================ */
+/* SLIDER */
+.slider {
+    display: block;
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
 }
-.tutoriais .container {
-    flex-direction: column;
+
+.slider li {
+    position: absolute;
+    width: 100%;
+}
+
+.slider .img-tutorial {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    /* height: 100%;  ocupar toda altura do container */
+    height: 360px;
+    width: 100%;
+    vertical-align: top; /* img alinhada verticalmente em relação ao topo */
+}
+
+.slider input {
+    display: none; /* nenhuma amostragem visual do elemento */
+}
+
+.slider label {
+    background-color: #222831;
+    border-radius: 16px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+
+    bottom: -30px;
+}
+
+.slider li:nth-child(1) label {
+    left: 44%;
+}
+
+.slider li:nth-child(2) label {
+    left: 49%;
+}
+
+.slider li:nth-child(3) label {
+    left: 54%;
+}
+
+.slider .img-tutorial {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ .img-tutorial {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.slider li input:checked ~ label {
+    background-color: #F05454;
+
 }
 
 /* ================================ */
 /* MEDIA */
-@media(max-width: 1070px) {
+@media(max-width: 620px) {
+    .slider label {
+        width: 15px;
+        height: 15px;
+    }
+    .vagas .container {
+        flex-direction: column-reverse;
+    }
+    .vagas .container .text {
+        text-align: center;
+    }
+    .vagas .container .text p {
+        text-align: center;
+    }
+    .icon {
+        /* DIMINUIR TAMANHO DOS ICONS */
+        max-width: 200px;
+    }
+}
+
+@media(max-width: 970px) {
+    .missao-valores .container {
+        flex-direction: column-reverse;
+    }
+    .missao-valores .container .text {
+        text-align: center;
+    }
+    .missao-valores .container .text p {
+        text-align: justify;
+    }
+}
+
+@media(max-width: 1060px) {
+    .sobre .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .sobre .container .text {
+        text-align: center;
+        max-width: 100%;
+    }
+    .sobre .container .text p {
+        text-align: center;
+    }
     .pessoas-imagens {
         display: flex;
         flex-direction: column;
@@ -265,5 +391,19 @@ p.frase-inspiracao cite {
     .pessoas-imagens div {
         width: 100%;
         height: 200px;
+    }
+}
+
+@media(max-width: 1170px) {
+    .carousel-wrapper img {
+        width: 30%;
+    }
+    .carousel-wrapper {
+        height: 300px;
+        width: 700px;
+        max-width: 100%;
+    }
+    .carousel-item{
+        padding: 0 100px;
     }
 }
