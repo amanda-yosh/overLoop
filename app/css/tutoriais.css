@@ -40,6 +40,7 @@ section.tutoriais {
     background-color: #e8e8e8;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 section.tutoriais h2 {
@@ -51,6 +52,7 @@ section.tutoriais h2 {
     padding-bottom: 10px;
     border-bottom: 3px solid #222831;
     display: inline-block;
+    max-width: 100%;
 }
 
 
@@ -80,17 +82,17 @@ section.space1 {
 section.tutoriais article {
     background-color: #fff;
     margin: 60px 0;
+    max-width: 100%;
 }
 
 
 section.tutoriais article h3 {
     font-family: 'Antic Slab', serif;
     max-width: 100%;
-
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 40px;
     border-bottom: 3px solid #222831;
     display: inline-block;
 }
@@ -119,21 +121,68 @@ section.tutoriais article li {
 }
 
 section.outras-fontes {
-    padding: 80px 0;
+    padding: 80px;
+    max-width: 100%;
 }
 
-section.outras-fontes .fontes{
+section.outras-fontes .fontes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    width: 630px;
+    gap: 40px;
+    width: 680px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.container h2{
+.container h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
+    margin-top: 50px;
+    max-width: 100%;
+}
 
+.paginacao button:hover {
+    transition: 0.6s;
+    background: #cc2d2d;
+}
+
+.paginacao button:active,
+.botaoenviar:active {
+    transition: 0.5s;
+    background: #1f1d1d;
+}
+
+ @media (max-width: 783px) {
+    .container {
+        margin: 0 auto;
+        padding-bottom: 0;
+        gap: 0;
+    }
+
+    .container .texto {
+        margin: 30px;
+
+    }
+    .outras-fontes .container h2 {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    /* .copy p {
+        text-align: center;
+    } */
+    section.tutoriais h2 {
+        margin-bottom: 0;
+    }
+
+} 
+@media (max-width: 743px) {
+    section.tutoriais article img {
+        margin-top: 50px;
+    }
+
+    section.tutoriais article,
+    section.tutoriais article p {
+        text-align: center;
+    }
 }
