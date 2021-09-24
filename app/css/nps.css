@@ -41,6 +41,7 @@ section.avaliacao h2 {
     margin-bottom: 20px;
     max-width: 100%;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -147,4 +148,5 @@ input::placeholder {
     transition: 0.5s;
     background: #1f1d1d;
 }
+
 

@@ -40,6 +40,7 @@ section.tutoriais {
     background-color: #e8e8e8;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 section.tutoriais h2 {
@@ -51,6 +52,7 @@ section.tutoriais h2 {
     padding-bottom: 10px;
     border-bottom: 3px solid #222831;
     display: inline-block;
+    max-width: 100%;
 }
 
 
@@ -80,6 +82,7 @@ section.space1 {
 section.tutoriais article {
     background-color: #fff;
     margin: 60px 0;
+    max-width: 100%;
 }
 
 
@@ -119,6 +122,7 @@ section.tutoriais article li {
 
 section.outras-fontes {
     padding: 80px;
+    max-width: 100%;
 }
 
 section.outras-fontes .fontes {
@@ -135,4 +139,42 @@ section.outras-fontes .fontes {
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
     margin-top: 50px;
+    max-width: 100%;
 }
+
+.paginacao button:hover {
+    transition: 0.6s;
+    background: #cc2d2d;
+}
+
+.paginacao button:active,
+.botaoenviar:active {
+    transition: 0.5s;
+    background: #1f1d1d;
+}
+
+ @media (min-width: 440px), 
+ (max-width: 800px) {
+    section.tutoriais article img {
+        margin-top: 50px;
+    }
+    .container {
+        margin: 0;
+        padding-bottom: 0;
+        gap: 0;
+    }
+
+    .container .texto {
+        text-align: center;
+        margin: 30px;
+
+    }
+    .outras-fontes .container h2 {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .copy p {
+        text-align: center;
+    }
+
+} 
