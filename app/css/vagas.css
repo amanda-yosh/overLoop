@@ -28,6 +28,7 @@ section hr {
 section.top p {
     padding: 30px;
     font-size: 18px;
+    text-align: center;
 }
 
 section.top .formulario {

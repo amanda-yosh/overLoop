@@ -21,6 +21,13 @@ a {
     color: #222831;
 }
 
+button {
+    border: none;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
 body {
     background: #e8e8e8;
     color: #222831;

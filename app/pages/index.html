@@ -23,76 +23,98 @@
     </header>
 
     <section class="intro">
-        <div class="banner"></div>
+        <!-- <div class="banner"></div> -->
         <h1>Além do Loop</h1>
     </section>
 
     <section class="sobre">
         <div class="container">
-            <section class="text">
+            <div class="text">
                 <h2>Sobre</h2>
-                <hr>
+                <!-- <hr> -->
                 <p>
-                    O overLoop é um portal de comunicação de tecnologia. Aqui você poderá encontrar diferentes assuntos que envolvam inovação, criatividade, aprendizado e muita, mais muita colaboração! Afinal de contas, é por isso que você está lendo este parágrafo.
+                    O overLoop é um portal de comunicação de tecnologia. Aqui você poderá encontrar diferentes assuntos que envolvam inovação, criatividade, aprendizado e muita, mais muita colaboração!
                 </p>
                 <p>
-                    O overLoop é um portal de comunicação de tecnologia. Aqui você poderá encontrar diferentes assuntos que envolvam inovação, criatividade, aprendizado e muita, mais muita colaboração! Afinal de contas, é por isso que você está lendo este parágrafo.
+                    O overLoop é um portal de comunicação de tecnologia. Aqui você poderá encontrar diferentes assuntos que envolvam inovação, criatividade, aprendizado e muita, mais muita colaboração!
                 </p>
-            </section>
+            </div>
             <img src="../img/foto-sobre-home.png" alt="">
         </div>
     </section>
 
     <section class="missao-valores">
         <div class="container">
-            <img src="../img/icon-missao.svg" alt="">
-            <section class="text">
+            <img class="icon" src="../img/icon-missao.svg" alt="">
+            <div class="text">
                 <h2>Missão</h2>
-                <hr>
+                <!-- <hr> -->
                 <p>
                     Nosso propósito é garantir o conteúdo de qualidade para todes nossos usuários de tecnologia.
                     <br>
                     Conteúdo gratuito e de qualidade para todes.
                 </p>
                 <h2>Valores</h2>
-                <hr>
+                <!-- <hr> -->
                 <p>
                     #aprendemos, ensinamos, renovamos;
                     <br>
                     #é tudo sobre colaborar, juntes vamos mais longe;
                 </p>
-            </section>
+            </div>
         </div>
     </section>
 
     <section class="vagas">
         <div class="container">
-            <section class="text">
+            <div class="text">
                 <h2>Vagas</h2>
-                <hr>
                 <p>
                     Conheça as vagas disponíveis
                     no mercado para as áreas de de front-end,
                     back-end, ciência de dados, Dev-ops e muitas outras.
                 </p>
                 <button class="call-to-action">Buscar</button>
-            </section>
-            <img src="../img/icon-vagas-home.svg" alt="">
+            </div>
+            <img class="icon" src="../img/icon-vagas-home.svg" alt="">
         </div>
     </section>
 
     <section class="pessoas">
         <div class="container">
             <h2>Pessoas que nos inspiram</h2>
-            <hr>
+            <!-- <hr> -->
             <div class="pessoas-imagens">
-                <div style="background-image: url(../img/foto1-inspira-home.png);" class="foto-1"></div>
-                <div style="background-image: url(../img/foto2-inspira-home.png);" class="foto-2"></div>
-                <div style="background-image: url(../img/foto3-inspira-home.png);" class="foto-3"></div>
-                <div style="background-image: url(../img/foto4-inspira-home.png);" class="foto-4"></div>
-
-
-                <img class="foto-5" src="../img/foto5-inspira-home.png" alt="">
+                <div style="background-image: url(../img/foto1-inspira-home.png);" class="foto foto-1">
+                    <p class="frase-inspiracao">
+                        <cite>Coloque uma frase inspiradora aqui!</cite>
+                        <br> E o nome do Autor aqui
+                    </p>
+                </div>
+                <div style="background-image: url(../img/foto2-inspira-home.png);" class="foto foto-2">
+                    <p class="frase-inspiracao">
+                        <cite>Se você não sabe onde quer ir, qualquer caminho serve.</cite>
+                        <br> Alice no País da Maravilhas
+                    </p>
+                </div>
+                <div style="background-image: url(../img/foto3-inspira-home.png);" class="foto foto-3">
+                    <p class="frase-inspiracao">
+                        <cite>Coloque uma frase inspiradora aqui!</cite>
+                        <br> E o nome do Autor aqui
+                    </p>
+                </div>
+                <div style="background-image: url(../img/foto4-inspira-home.png);" class="foto foto-4">
+                    <p class="frase-inspiracao">
+                        <cite>Coloque uma frase inspiradora aqui!</cite>
+                        <br> E o nome do Autor aqui
+                    </p>
+                </div>
+                <div style="background-image: url(../img/foto5-inspira-home.png);" class="foto foto-5">
+                    <p class="frase-inspiracao">
+                        <cite>Coloque uma frase inspiradora aqui!</cite>
+                        <br> E o nome do Autor aqui
+                    </p>
+                </div>
             </div>
             <p>Conheça mais sobre essas e outras histórias incríveis</p>
             <button class="call-to-action">Inspire-se!</button>
@@ -102,16 +124,41 @@
     <section class="mulheres">
         <div class="container">
             <h2>Mulheres em destaque</h2>
-            <hr>
-            <div class="carousel">
-                <img src="../img/foto1-mulherdestaque-home.png" alt="">
-                <img src="../img/foto2-mulherdestaque-home.png" alt="">
-                <img src="../img/foto3-mulherdestaque-home.png" alt="">
-                <img src="../img/foto4-mulherdestaque-home.png" alt="">
 
-                <div class="controls">
-                    <button><img src="../img/arrow-left-home.svg" alt="Voltar Slide"></button>
-                    <button><img src="../img/arrow-right-home.svg" alt="Avançar Slide"></button>
+            <div class="carousel-wrapper">
+                <span id="item-1"></span>
+                <span id="item-2"></span>
+                <span id="item-3"></span>
+                
+                <div class="carousel-item item-1">
+                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
+
+                  
+                    <a class="arrow arrow-prev" href="#item-3"></a>
+                    <a class="arrow arrow-next" href="#item-2"></a>
+                </div>
+                
+                <div class="carousel-item item-2">
+                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
+                  
+                    <a class="arrow arrow-prev" href="#item-1"></a>
+                    <a class="arrow arrow-next" href="#item-3"></a>
+                </div>
+                
+                <div class="carousel-item item-3">
+                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto3-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto4-mulherdestaque-home.png" alt="">
+                  
+                    <a class="arrow arrow-prev" href="#item-2"></a>
+                    <a class="arrow arrow-next" href="#item-1"></a>
                 </div>
             </div>
         </div>
@@ -122,15 +169,26 @@
     <section class="tutoriais">
         <div class="container">
             <h2>Tutoriais</h2>
-            <hr>
-            <div class="carousel">
-                <img src="../img/foto-tutoriais-home.png" alt="">
 
-                <div class="controls">
-                    <button><img src="../img/arrow-left-home.svg" alt="Voltar Slide"></button>
-                    <button><img src="../img/arrow-right-home.svg" alt="Avançar Slide"></button>
-                </div>
-            </div>
+            <!-- SLIDER -->
+            <ul class="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <div class="img-tutorial" style="background-image: url(../img/foto-tutoriais-home.png);"></div>
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <div class="img-tutorial" style="background-image: url(../img/foto-tutoriais-home2.jpg);"></div>
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <div class="img-tutorial" style="background-image: url(../img/foto-tutoriais-home3.jpg);"></div>
+                </li>
+            </ul>
+
             <p>Aprenda com os melhores e o melhor: <strong>de graça!</strong></p>
             <button class="call-to-action">Aprenda agora!</button>
         </div>
@@ -141,7 +199,7 @@
             <img class="logo" src="../img/overLoop-logo-white.png" alt="Logo da overLoop">
             <div class="contato">
                 <h3>Contato</h3>
-                <p>Broad St, Newark, NJ 07102 - USA</p>    
+                <p><a href="https://goo.gl/maps/EYHFqbz6LECyFk8p6">Broad St, Newark, NJ 07102 - USA</a></p>    
                 <p><a href="tel:+1973854555548">+1 (973) 854-555-548</a></p>
                 <p><a href="mailto: contact@overloop.com">contact@overloop.com</a></p>
             </div>
