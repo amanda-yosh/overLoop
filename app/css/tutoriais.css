@@ -86,11 +86,10 @@ section.tutoriais article {
 section.tutoriais article h3 {
     font-family: 'Antic Slab', serif;
     max-width: 100%;
-
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 40px;
     border-bottom: 3px solid #222831;
     display: inline-block;
 }
@@ -119,21 +118,21 @@ section.tutoriais article li {
 }
 
 section.outras-fontes {
-    padding: 80px 0;
+    padding: 80px;
 }
 
-section.outras-fontes .fontes{
+section.outras-fontes .fontes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    width: 630px;
+    gap: 40px;
+    width: 680px;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.container h2{
+.container h2 {
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
-
+    margin-top: 50px;
 }
