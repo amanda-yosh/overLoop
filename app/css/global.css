@@ -184,6 +184,9 @@ footer a:hover {
     .redes-sociais ul li:first-child {
         margin-left: 18px;
     }
+    footer {
+        padding: 45px 10px 10px;
+    }
 }
 
 @media(max-width: 800px) {
