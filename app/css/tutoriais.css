@@ -98,6 +98,7 @@ section.tutoriais article h3 {
 }
 
 section.tutoriais article p {
+    font-family: 'Urbanist', sans-serif;
     text-align: justify;
     padding: 20px 0 40px 0;
     max-width: 100%;
@@ -109,6 +110,7 @@ section.tutoriais article img {
 }
 
 section.tutoriais article a {
+    font-family: 'Urbanist', sans-serif;
     text-decoration: underline;
     color: #F05454;
     max-width: 100%;
@@ -120,6 +122,10 @@ section.tutoriais article li {
     max-width: 100%;
 }
 
+section.tutoriais article .texto {
+    width: 500px;
+    max-width: 100%;
+}
 section.outras-fontes {
     padding: 80px;
     max-width: 100%;
@@ -153,7 +159,7 @@ section.outras-fontes .fontes {
     background: #1f1d1d;
 }
 
- @media (max-width: 783px) {
+ @media (max-width: 899px) {
     .container {
         margin: 0 auto;
         padding-bottom: 0;
@@ -168,15 +174,15 @@ section.outras-fontes .fontes {
         text-align: center;
         margin-bottom: 45px;
     }
-    /* .copy p {
-        text-align: center;
-    } */
+    section.tutoriais article .texto {
+        width: 500px;
+    }
     section.tutoriais h2 {
         margin-bottom: 0;
     }
 
 } 
-@media (max-width: 743px) {
+@media (max-width: 759px) {
     section.tutoriais article img {
         margin-top: 50px;
     }
