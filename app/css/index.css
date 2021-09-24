@@ -76,7 +76,7 @@ p {
     text-align: left;
 }
 
-section:not(.intro) {
+section:not(.intro, .info) {
     padding: 100px 0 90px 0;
 
 }
