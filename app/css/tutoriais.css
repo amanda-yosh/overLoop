@@ -98,7 +98,6 @@ section.tutoriais article h3 {
 }
 
 section.tutoriais article p {
-    font-family: 'Urbanist', sans-serif;
     text-align: justify;
     padding: 20px 0 40px 0;
     max-width: 100%;
@@ -110,7 +109,6 @@ section.tutoriais article img {
 }
 
 section.tutoriais article a {
-    font-family: 'Urbanist', sans-serif;
     text-decoration: underline;
     color: #F05454;
     max-width: 100%;
@@ -150,12 +148,12 @@ section.outras-fontes .fontes {
 
 .paginacao button:hover {
     transition: 0.6s;
-    background: #cc2d2d;
+    background: #1f1d1d;
 }
 
 .paginacao button:active,
 .botaoenviar:active {
-    transition: 0.5s;
+    transition: 0.2s linear;
     background: #1f1d1d;
 }
 
@@ -182,7 +180,7 @@ section.outras-fontes .fontes {
     }
 
 } 
-@media (max-width: 759px) {
+@media (max-width: 743px) {
     section.tutoriais article img {
         margin-top: 50px;
     }
