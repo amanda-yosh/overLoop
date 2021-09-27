@@ -397,6 +397,10 @@ p.frase-inspiracao cite {
     .vagas .container .text p {
         text-align: center;
     }
+    p {
+        text-align: center;
+        line-height: 1.6rem;
+    }
     .icon {
         /* DIMINUIR TAMANHO DOS ICONS */
         max-width: 200px;
@@ -407,11 +411,16 @@ p.frase-inspiracao cite {
     h1 {
         padding-top: 330px;
     }
-    p {
-        text-align: center;
-        line-height: 1.6rem;
-    }
     p cite {
         font-size: 1rem;
+    }
+    .slider li:nth-child(1) label {
+        left: 40%;
+    }
+    .slider li:nth-child(2) label {
+        left: 49%;
+    }
+    .slider li:nth-child(3) label {
+        left: 58%;
     }
 }
