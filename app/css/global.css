@@ -37,6 +37,7 @@ body {
 }
 
 .logo {
+    cursor: pointer;
     width: 199px;
     height: 39px;
 }
