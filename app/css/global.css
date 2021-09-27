@@ -96,6 +96,10 @@ header li a {
     background-size: 4px 4px;
     transition: background-size .2s;
 }
+
+header li:last-of-type a {
+    margin: 0;
+}
   
 header li a:hover {
     color: #F05454;
@@ -213,6 +217,9 @@ footer a:hover {
 }
 
 @media(max-width: 670px) {
+    header {
+        padding: 35px 0 30px;
+    }
     .copy {
         flex-wrap: wrap;
         flex-direction: column-reverse;

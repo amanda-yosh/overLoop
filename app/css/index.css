@@ -78,7 +78,6 @@ p {
 
 section:not(.intro, .info) {
     padding: 100px 0 90px 0;
-
 }
 
 section.sobre,
@@ -110,7 +109,6 @@ section.tutoriais {
 .missao-valores .text p {
     text-align: end;
 }
-
 .missao-valores .text>p {
     margin-bottom: 30px;
 }
@@ -127,7 +125,6 @@ section.tutoriais {
     background-position: center;
     background-size: cover;
 }
-
 .pessoas-imagens {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
@@ -149,12 +146,10 @@ section.tutoriais {
     height: 500px;
     min-height: 200px;
 }
-
 .foto {
     -webkit-box-shadow: 1px 4px 15px 5px rgba(0,0,0,0.4); 
     box-shadow: 1px 4px 15px 5px rgba(0,0,0,0.4);
 }
-
 .frase-inspiracao {
     background-color: #f054547c;
     height: 100%;
@@ -168,22 +163,18 @@ section.tutoriais {
     opacity: 0;
     transition: 0.5s linear;
 }
-
 .frase-inspiracao cite {
     text-align: center;
     font-size: 1.2rem;
 }
-
 .frase-inspiracao:hover {
     opacity: 1;
 }
-
 p.frase-inspiracao {
     color: #fff;
 
     font-family: 'Antic Slab';
 }
-
 p.frase-inspiracao cite {
     font-weight: bold;
 }
@@ -234,32 +225,26 @@ p.frase-inspiracao cite {
 .light{
     color:white;
 }
-
 @media (max-width: 480px) {
     .arrow, .light .arrow {
         background-size: 10px;
         background-position: 10px 50%;
     }
 }
-  
 /*Select every element*/
 [id^="item"] {
     display: none;
 }
-  
 .item-1 {
     z-index: 2;
     opacity: 1;
 }
-  
 *:target ~ .item-1 {
     opacity: 0;
 }
-  
 #item-1:target ~ .item-1 {
     opacity: 1;
 }
-  
 #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
     z-index: 3;
     opacity: 1;
