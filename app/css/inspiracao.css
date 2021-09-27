@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, button {
     font-family: 'Antic Slab', serif;
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 46px;
+    width: 100%;
 }
 
 h2 {
@@ -50,14 +51,15 @@ button.call-to-action a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 2100px;
-    max-width: 100%;
+    max-width: 2100px;
+    width: 100%;
     margin: 0 auto;
     height: 505px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 15px;
 }
 
 .banner h1 {
@@ -78,22 +80,22 @@ button.call-to-action a {
 }
 
 /* carrosel */
-.profissoes h2 {
-   display: block;
-   margin-left: 50px;
-}
-
 .profissoes .container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     position: relative;
-    width: 1100px;
-    max-width: 100%;
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
+
+.profissoes .container .subtitulo {
+    display: block;
+    margin-left: 50px;
+ }
 
 .profissoes .container .info {
     padding: 0 50px;
@@ -105,16 +107,16 @@ button.call-to-action a {
 }
 
 .profissoes .container .info .fotos img{
-    width: 450px;
-    height: 450px;
-    max-width: 100%;
+    width: 100%;
+    /* height: 450px; */
+    max-width: 450px;
 }
 
 .profissoes .container .info .texto {
     display: flex;
     flex-direction: column;
-    width: 430px;
-    max-width: 100%;
+    max-width: 430px;
+    width: 100%;
 }
 
 .profissoes .container .info .texto .titulo {
@@ -134,15 +136,16 @@ button.call-to-action a {
 }
 
 .profissoes .container .controls button {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    max-width: 50px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
 .profissoes .container .controls button img {
-    width: 30px;
+    width: 100%;
+    max-width: 30px;
 }
 
 /* noticias */
@@ -151,10 +154,11 @@ button.call-to-action a {
     text-align: center;
 }
 
-.noticias h2 {
+.noticias .subtitle  {
     text-align: center;
     padding: 50px 0px 0px 0px;
     font-size: 40px;
+    width: 100%;
 }
 
 .noticias .container{
@@ -172,16 +176,14 @@ button.call-to-action a {
     
 }
 
-.noticias .container article .image{
+.noticias .container article .image img{
     background-color: #B1B1B1;
-    width: 270px;
-    height: 270px;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    max-width: 270px;
 }
 
 .noticias .container article .info{
-    max-width: 50%;
+    max-width: 100%;
     gap: 20px;
 }
 
@@ -213,27 +215,30 @@ button.call-to-action a {
     align-items: center;
     display: flex;
     flex-direction: column; 
-    width: 1100px;
-    max-width: 100%;
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .fundadoras .container .titulo {
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 32px;
     font-weight: 400px;
     line-height: 42px; 
+    flex-wrap: wrap;
 }
 
 .fundadoras .container .titulo img {
-    width: 240px;
+    max-width: 240px;
     height: 77px;
     margin-top: 8px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
     border-bottom: 3px solid #222831;
+    width: 100%;
 }
 
 .fundadoras .container .galery {
@@ -242,7 +247,7 @@ button.call-to-action a {
 }
 
 .fundadoras .container .galery figure {
-    padding: 52px;
+    padding: 32px;
     text-align: center;
     font-size: 18px;
     text-indent: 0;
@@ -253,8 +258,8 @@ button.call-to-action a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 1100px;
-    max-width: 100%;
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto; 
 }
 
@@ -265,4 +270,51 @@ button.call-to-action a {
     line-height: 25px;
     letter-spacing: 1px;
 }
+
+@media (max-width: 1070px){
+    .profissoes .info {
+        width: 100%;
+    }
+
+    .profissoes .container .subtitulo{
+        text-align: center;
+    }
+
+    .profissoes .container .info .titulo {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 875px) {
+    .fundadoras .container .galery {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .profissoes .container .info .fotos {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 660px) {
+    .fundadoras .container .titulo img {
+        align-self: center;
+    }
+    .fundadoras .container .titulo h2{
+        border: 0px;
+    }
+    /* .fundadoras .container .titulo img{
+        border: 0px;
+    } */
+
+}
+@media (max-width: 440px) {
+    .noticias .subtitle h2 {
+        line-break: auto;
+    }
+}
+
+
 
