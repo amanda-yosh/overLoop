@@ -110,6 +110,7 @@ section.tutoriais article img {
 
 section.tutoriais article a {
     text-decoration: underline;
+    font-family: 'Urbanist', sans-serif;
     color: #F05454;
     max-width: 100%;
 
@@ -123,7 +124,9 @@ section.tutoriais article li {
 section.tutoriais article .texto {
     width: 500px;
     max-width: 100%;
+    font-family: 'Urbanist', sans-serif;
 }
+
 section.outras-fontes {
     padding: 80px;
     max-width: 100%;

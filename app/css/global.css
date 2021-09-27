@@ -169,6 +169,11 @@ footer a:hover {
     max-width: 100%;
 }
 
+.paginacao button:hover {
+    transition: 0.6s;
+    background: #1f1d1d;
+}
+
 /************************************/
 
 /* media */
