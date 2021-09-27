@@ -32,37 +32,36 @@ section.top p {
 }
 
 section.top .formulario {
-    width: 60vw; 
+    width: 60vw;
     padding: 8px;
     background-color: #FFFFFF;
     border-radius: 10px;
-
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
-section.top .formulario img.icon  {
-    width: 40px; 
+section.top .formulario img.icon {
+    width: 40px;
     height: 40px;
     margin: 0 10px;
-   
+
 }
 
-section.top .formulario .input-localizacao img.icon  {
+section.top .formulario .input-localizacao img.icon {
     margin: 3px 10px;
-   
+
 }
 
-.input-cargo, 
+.input-cargo,
 .input-localizacao {
     display: flex;
     flex-direction: row;
 }
 
-section.top .formulario #lupa  {
-    width: 40px; 
-    height: 40px;
-   
+section.top .formulario #lupa {
+    width: 34px;
+    height: 34px;
+
 }
 
 .formulario label {
@@ -75,16 +74,17 @@ input {
     width: 80%;
     outline: none;
     font-size: 16px;
-    min-width:  220px;
+    min-width: 220px;
 }
 
 input::placeholder {
     color: #AAA9A9;
+    font-family: 'Urbanist', sans-serif;
 }
 
 button#search {
-    width: 55px;
-    height: 50px;
+    width: 48px;
+    height: 46px;
     background: #F05454;
     border: none;
     border-radius: 10px;
@@ -92,10 +92,13 @@ button#search {
     transition: 0.3s;
 }
 
-button#search:hover{
+button#search:hover {
     background: black;
 }
 
+button#search span {
+    display: none;
+}
 
 section.content {
     width: 100vw;
@@ -119,7 +122,6 @@ section.content .job-info {
     height: 250px;
     padding: 20px;
     margin: 30px 30px 50px;
-
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
@@ -130,19 +132,21 @@ section.content .text {
     padding: 20px 10px 10px;
     position: relative;
     top: -70px;
+    font-family: 'Urbanist', sans-serif;
 }
 
 
-section.content .text h2{ 
+section.content .text h2 {
     font-family: 'Antic Slab', serif;
 }
 
-section.content .text p{ 
+section.content .text p {
     padding: 12px 0;
     color: #AAA9A9;
+    font-family: 'Urbanist', sans-serif;
 }
 
-section.content .text .location{ 
+section.content .text .location {
     padding: 12px 0;
     color: #F05454;
     font-weight: 600;
@@ -151,35 +155,62 @@ section.content .text .location{
 section.container-paginacao {
     display: flex;
     justify-content: center;
-    margin: 50px 0 100px ;
+    margin: 50px 0 100px;
 }
 
+@media(max-width: 1199px) {
+    section.content .job-info {
+        width: 300px;
+    }
+}
 
 
 @media(max-width:1070px) {
     section.top .formulario {
-        width: 40vw; 
+        width: 40vw;
         min-width: 340px;
         padding: 8px;
         background-color: none;
-        border-radius: 10px; 
-    
-        
+        border-radius: 10px;
+
+
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
-    label, input {
+
+    label,
+    input {
         margin: 5px;
     }
 
+    button#search {
+        width: 150px;
+        height: 40px;
+        max-width: 100%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
 
-    @media(max-width: 800px) {
-        section.top {
-            margin: 130px 0 0;
-        }
+    button#search img {
+        display: none;
+
+    }
+
+    button#search span {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+
+}
+
+@media(max-width: 800px) {
+    section.top {
+        margin: 130px 0 0;
     }
 }
