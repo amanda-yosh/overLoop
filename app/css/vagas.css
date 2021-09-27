@@ -89,7 +89,13 @@ button#search {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+button#search:hover{
+    background: black;
+}
+
 
 section.content {
     width: 100vw;
