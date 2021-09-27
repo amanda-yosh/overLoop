@@ -129,7 +129,7 @@ section.avaliacao h2 {
 
 .botaoenviar {
     border: none;
-    background-color: #F05454;
+    background: #222831;
     color: #fff;
     padding: 10px 60px;
     text-align: center;
@@ -142,21 +142,20 @@ section.avaliacao h2 {
     max-width: 100%;
     font-family: 'Urbanist', sans-serif;
 
-}
+} 
 
 .botaoenviar:hover {
-    transition: 0.6s;
-    background: #cc2d2d;
+    transition: 0.5s;
+    background: #F05454;
 }
 
 .paginacao button:hover {
     transition: 0.6s;
-    background: #cc2d2d;
+    background: #1f1d1d;
 }
 
-.paginacao button:active,
-.botaoenviar:active {
-    transition: 0.5s;
+.paginacao button:active {
+    transition: 0.4s;
     background: #1f1d1d;
 }
 
