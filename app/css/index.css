@@ -347,40 +347,20 @@ p.frase-inspiracao cite {
 
 /* ================================ */
 /* MEDIA */
-@media(max-width: 440px) {
-    h1 {
-        padding-top: 330px;
+@media(max-width: 1170px) {
+    section:not(.intro, .info) {
+        padding: 50px 0 45px 0;
     }
-}
-@media(max-width: 620px) {
-    .slider label {
-        width: 15px;
-        height: 15px;
+    .carousel-wrapper img {
+        width: 30%;
     }
-    .vagas .container {
-        flex-direction: column-reverse;
+    .carousel-wrapper {
+        height: 300px;
+        width: 700px;
+        max-width: 100%;
     }
-    .vagas .container .text {
-        text-align: center;
-    }
-    .vagas .container .text p {
-        text-align: center;
-    }
-    .icon {
-        /* DIMINUIR TAMANHO DOS ICONS */
-        max-width: 200px;
-    }
-}
-
-@media(max-width: 970px) {
-    .missao-valores .container {
-        flex-direction: column-reverse;
-    }
-    .missao-valores .container .text {
-        text-align: center;
-    }
-    .missao-valores .container .text p {
-        text-align: justify;
+    .carousel-item{
+        padding: 0 100px;
     }
 }
 
@@ -406,19 +386,47 @@ p.frase-inspiracao cite {
     }
 }
 
-@media(max-width: 1170px) {
-    section:not(.intro, .info) {
-        padding: 50px 0 45px 0;
+@media(max-width: 970px) {
+    .missao-valores .container {
+        flex-direction: column-reverse;
     }
-    .carousel-wrapper img {
-        width: 30%;
+    .missao-valores .container .text {
+        text-align: center;
     }
-    .carousel-wrapper {
-        height: 300px;
-        width: 700px;
-        max-width: 100%;
+    .missao-valores .container .text p {
+        text-align: justify;
     }
-    .carousel-item{
-        padding: 0 100px;
+}
+
+@media(max-width: 620px) {
+    .slider label {
+        width: 15px;
+        height: 15px;
+    }
+    .vagas .container {
+        flex-direction: column-reverse;
+    }
+    .vagas .container .text {
+        text-align: center;
+    }
+    .vagas .container .text p {
+        text-align: center;
+    }
+    .icon {
+        /* DIMINUIR TAMANHO DOS ICONS */
+        max-width: 200px;
+    }
+}
+
+@media(max-width: 440px) {
+    h1 {
+        padding-top: 330px;
+    }
+    p {
+        text-align: center;
+        line-height: 1.6rem;
+    }
+    p cite {
+        font-size: 1rem;
     }
 }
