@@ -48,7 +48,7 @@ header {
     left: 0;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 90;
 
     display: flex;
@@ -68,7 +68,8 @@ header.solid {
 }
 
 header ul {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
