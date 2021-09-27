@@ -160,11 +160,17 @@ section.tutoriais {
     height: 100%;
 
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
     opacity: 0;
     transition: 0.5s linear;
+}
+
+.frase-inspiracao cite {
+    text-align: center;
 }
 
 .frase-inspiracao:hover {

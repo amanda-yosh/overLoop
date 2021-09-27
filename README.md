@@ -1,6 +1,7 @@
 <p align="center">
     <img src="app/img/overLoop-logo-white.png" style="margin: 0 auto" />
 </p>
+
 <h2 style="text-align: center">nosso portal de tecnologia</h2>
 
 A ideia é ter um espaço voltado para a área de tecnologia
