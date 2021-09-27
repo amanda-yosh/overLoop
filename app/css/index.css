@@ -347,6 +347,11 @@ p.frase-inspiracao cite {
 
 /* ================================ */
 /* MEDIA */
+@media(max-width: 440px) {
+    h1 {
+        padding-top: 330px;
+    }
+}
 @media(max-width: 620px) {
     .slider label {
         width: 15px;
