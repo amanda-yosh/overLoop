@@ -37,7 +37,6 @@ function showNews(newsList) {
                 </div>
                 <p>
                     ${fields.trailText}
-                    ${fields.standfirst}
                 </p>
                 <p>
                     Saiba mais em <a href="${webUrl}" target="_blank"> link</a>.
