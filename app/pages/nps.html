@@ -29,65 +29,66 @@
     <p>Ajude-nos a melhorar nossa plataforma através da nossa pesquisa de usabilidade!</p>
     </section>
     <section class="container-form">
-        <form enctype="multipart/form-data">
+        <form action="nps-enviado.html" id="form" enctype="multipart/form-data">
             <label for="nome">Nome*:</label>
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui" required>
 
             <label for="email">Email*:</label>
             <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required>
 
+            <section class="recomenda">
+                <p>O quanto você recomendaria este site a outra pessoa?</p>
+                <div class="paginacao">
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="10" class="button10">10</button>
+                </div>
+            </section>
+        
+            <section class="facil">
+                <p>O quanto você achou este site fácil de usar?</p>
+                <div class="paginacao">
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="10" class="button10">10</button>
+                </div>
+            </section>
+        
+            <section class="util">
+                <p>O quanto você achou este site útil?</p>
+                <div class="paginacao">
+                    <button value="1">1</button>
+                    <button value="2">2</button>
+                    <button value="3">3</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
+                    <button value="6">6</button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button value="10" class="button10">10</button>
+                </div>
+            </section>
+            <section class="enviar">
+                <button type="submit" class="botaoenviar">Enviar</button>
+            </section>
         </form>
     </section>
-    <section class="recomenda">
-        <p>O quanto você recomendaria este site a outra pessoa?</p>
-        <div class="paginacao">
-            <button class="button1">1</button>
-            <button class="button2">2</button>
-            <button class="button3">3</button>
-            <button class="button4">4</button>
-            <button class="button5">5</button>
-            <button class="button6">6</button>
-            <button class="button7">7</button>
-            <button class="button8">8</button>
-            <button class="button9">9</button>
-            <button class="button10">10</button>
-        </div>
-    </section>
-
-    <section class="facil">
-        <p>O quanto você achou este site fácil de usar?</p>
-        <div class="paginacao">
-            <button class="button1">1</button>
-            <button class="button2">2</button>
-            <button class="button3">3</button>
-            <button class="button4">4</button>
-            <button class="button5">5</button>
-            <button class="button6">6</button>
-            <button class="button7">7</button>
-            <button class="button8">8</button>
-            <button class="button9">9</button>
-            <button class="button10">10</button>
-        </div>
-    </section>
-
-    <section class="util">
-        <p>O quanto você achou este site útil?</p>
-        <div class="paginacao">
-            <button class="button1">1</button>
-            <button class="button2">2</button>
-            <button class="button3">3</button>
-            <button class="button4">4</button>
-            <button class="button5">5</button>
-            <button class="button6">6</button>
-            <button class="button7">7</button>
-            <button class="button8">8</button>
-            <button class="button9">9</button>
-            <button class="button10">10</button>
-        </div>
-    </section>
-    <section class="enviar">
-        <a href="nps-enviado.html"><button class="botaoenviar">Enviar</button></a>
-    </section>
+    
 
     <footer>
         <section class="info">
@@ -114,5 +115,7 @@
             <p>#GeraçãoElasEmTech 2021</p>
         </div>
     </footer>
+
+    <script src="../nps.js"></script>
 </body>
 </html>
