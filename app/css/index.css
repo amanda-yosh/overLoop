@@ -24,26 +24,6 @@ img {
     height: auto;
 }
 
-button.call-to-action {
-    width: 200px;
-    height: 50px;
-
-    background: #222831;
-
-    border-radius: 16px;
-    
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-align: center;
-
-    transition: all .2s linear;
-}
-
-button.call-to-action:hover {
-    background: #F05454;
-}
-
 h1, h2 {
     font-family: 'Antic Slab', serif;
     margin-bottom: 16px;
