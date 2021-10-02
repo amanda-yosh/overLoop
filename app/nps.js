@@ -42,9 +42,8 @@ window.addEventListener('load', () => {
     })
 
     btnEnviar.addEventListener('click', (event) => {
-
+        event.preventDefault()
         if (nomeInput.value.length < 2) {
-            event.preventDefault()
 
             let erro = document.createElement('p');
             let msg = document.createTextNode('Preencha um nome válido')
@@ -53,7 +52,6 @@ window.addEventListener('load', () => {
             nomeInput.insertAdjacentElement("afterend", erro);  
         }
         if (emailInput.value.length < 10 || emailInput.value.length > 180 || !emailInput.value.includes('.') || !emailInput.value.includes('@')) {
-            event.preventDefault()
 
             let erro = document.createElement('p');
             let msg = document.createTextNode('Preencha o email de forma correta, < 10, > 180, incluindo . e @')
@@ -62,7 +60,6 @@ window.addEventListener('load', () => {
             emailInput.insertAdjacentElement("afterend", erro);   
         }
         else if (!btnListRecomendaValue || !btnListFacilValue || !btnListUtilValue) {
-            event.preventDefault()
 
             let erro = document.createElement('p');
             let msg = document.createTextNode('Marque uma nota para cada uma das perguntas')
@@ -75,9 +72,23 @@ window.addEventListener('load', () => {
             let tagp = document.querySelector('#form p');
             tagp.innerHTML='';
         }
-
         emailInputValue = emailInput.value
         nomeInputValue = nomeInput.value
+
+        fetch('http://localhost:3000/posts', {
+            method: 'POST',
+            body: JSON.stringify({
+                nome: nomeInputValue,
+                email: emailInputValue,
+                notaRecomenda: btnListRecomendaValue,
+                notaUtil: btnListUtilValue,
+                notaFacil: btnListFacilValue
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
     })
 })           
            

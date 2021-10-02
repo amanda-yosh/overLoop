@@ -1,0 +1,24 @@
+{
+  "name": "overloop",
+  "version": "1.0.0",
+  "description": "Notion",
+  "main": "index.js",
+  "dependencies": {
+    "@notionhq/client": "^0.4.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanda-yosh/overLoop.git"
+  },
+  "author": "overLoop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanda-yosh/overLoop/issues"
+  },
+  "homepage": "https://github.com/amanda-yosh/overLoop#readme"
+}

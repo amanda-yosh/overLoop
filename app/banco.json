@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "nome": "Tais",
+      "email": "taisbruno@id.uff.br",
+      "notaRecomenda": "10",
+      "notaFacil": "10",
+      "notaUtil": "10"
+    }
+  ]
+}
