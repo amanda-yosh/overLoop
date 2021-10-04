@@ -2,6 +2,9 @@ let inputLocation = document.getElementById('localizacao')
 let inputRole = document.getElementById('cargo-empresa')
 let btnSearch = document.getElementById('search')
 let sectionContent = document.querySelector('section.content')
+let forms = document.querySelector('.formulario')
+
+
 
 function callAPI(params = `{ keywords: 'it' }`) {
     var url = "https://jooble.org/api/";
@@ -20,7 +23,7 @@ function callAPI(params = `{ keywords: 'it' }`) {
     http.onreadystatechange = function() {
         if(http.readyState == 4 && http.status == 200) {
             // console.log(JSON.parse(http.responseText));
-            showVagas(JSON.parse(http.responseText).jobs.slice(0,9));
+            showVagas(JSON.parse(http.responseText).jobs);
             // console.log(JSON.parse(http.responseText).jobs.slice(0, 9))
         }
     }
@@ -64,3 +67,13 @@ btnSearch.addEventListener('click', (event) => {
     sectionContent.innerHTML = ''
     callAPI(params)
 })
+
+forms.onmouseover = (event) => {
+    forms.style.cssText = "box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3); transition: all .4s"
+}
+
+forms.onmouseout = (event) => {
+    forms.style.cssText = "box-shadow: none; transition: all .4s "
+}
+
+console.log(forms);
