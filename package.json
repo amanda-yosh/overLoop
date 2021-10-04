@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "@notionhq/client": "^0.4.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "json-server": "^0.16.3"
   },
   "devDependencies": {},
   "scripts": {
