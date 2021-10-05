@@ -47,6 +47,8 @@ section.top .formulario img.icon {
 
 }
 
+
+
 section.top .formulario .input-localizacao img.icon {
     margin: 3px 10px;
 
@@ -54,8 +56,15 @@ section.top .formulario .input-localizacao img.icon {
 
 .input-cargo,
 .input-localizacao {
+    width: 45%;
     display: flex;
     flex-direction: row;
+}
+
+#cargo-empresa {
+    outline: none;
+    border: none;
+    width: 100%;
 }
 
 section.top .formulario #lupa {
@@ -110,16 +119,9 @@ section.content {
     flex-wrap: wrap;
 }
 
-section.content .job img {
-    width: 70px;
-    position: relative;
-    top: -60px;
-    left: 10px;
-}
-
 section.content .job-info {
     width: 340px;
-    height: 250px;
+    height: 280px;
     padding: 20px;
     margin: 30px 30px 50px;
     background: #FFFFFF;
@@ -129,24 +131,25 @@ section.content .job-info {
 }
 
 section.content .text {
-    padding: 20px 10px 10px;
-    position: relative;
-    top: -70px;
+    padding: 0 10px;
     font-family: 'Urbanist', sans-serif;
 }
 
 
 section.content .text h2 {
     font-family: 'Antic Slab', serif;
+    font-size: 24px;
 }
 
 section.content .text p {
+    font-size: 13px;
     padding: 12px 0;
     color: #AAA9A9;
     font-family: 'Urbanist', sans-serif;
 }
 
 section.content .text .location {
+    font-size: 12px;
     padding: 12px 0;
     color: #F05454;
     font-weight: 600;
@@ -161,6 +164,7 @@ section.container-paginacao {
 @media(max-width: 1199px) {
     section.content .job-info {
         width: 300px;
+        height: 300px;
     }
 }
 
@@ -185,6 +189,12 @@ section.container-paginacao {
     input {
         margin: 5px;
     }
+
+    .input-cargo,
+    .input-localizacao {
+        width: 80%;
+    }
+
 
     button#search {
         width: 150px;
@@ -212,5 +222,10 @@ section.container-paginacao {
 @media(max-width: 800px) {
     section.top {
         margin: 130px 0 0;
+    }
+
+    .input-cargo,
+    .input-localizacao {
+        width: 90%;
     }
 }
