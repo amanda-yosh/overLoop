@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/carousel.css">
 </head>
 <body>
     <header class="transparente">
@@ -125,42 +126,23 @@
         <div class="container">
             <h2>Mulheres em destaque</h2>
 
-            <div class="carousel-wrapper">
-                <span id="item-1"></span>
-                <span id="item-2"></span>
-                <span id="item-3"></span>
-                
-                <div class="carousel-item item-1">
-                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
-                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
-                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
-                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
-
-                  
-                    <a class="arrow arrow-prev" href="#item-3"></a>
-                    <a class="arrow arrow-next" href="#item-2"></a>
-                </div>
-                
-                <div class="carousel-item item-2">
-                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
-                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
-                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
-                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
-                  
-                    <a class="arrow arrow-prev" href="#item-1"></a>
-                    <a class="arrow arrow-next" href="#item-3"></a>
-                </div>
-                
-                <div class="carousel-item item-3">
+            <div class="glider-contain">
+                <div class="glider">
                     <img src="../img/foto1-mulherdestaque-home.png" alt="">
                     <img src="../img/foto2-mulherdestaque-home.png" alt="">
                     <img src="../img/foto3-mulherdestaque-home.png" alt="">
                     <img src="../img/foto4-mulherdestaque-home.png" alt="">
-                  
-                    <a class="arrow arrow-prev" href="#item-2"></a>
-                    <a class="arrow arrow-next" href="#item-1"></a>
+                    <img src="../img/foto1-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto4-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto3-mulherdestaque-home.png" alt="">
+                    <img src="../img/foto2-mulherdestaque-home.png" alt="">
+
                 </div>
-            </div>
+              
+                <button aria-label="Previous" class="glider-prev">«</button>
+                <button aria-label="Next" class="glider-next">»</button>
+                <div role="tablist" class="dots"></div>
+              </div>
         </div>
     </section>
 
@@ -219,5 +201,6 @@
             <p>#GeraçãoElasEmTech 2021</p>
         </div>
     </footer>
+    <script src="../carousel.js"></script>
 </body>
 </html>
