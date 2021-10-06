@@ -22,6 +22,7 @@ window.addEventListener('load', () => {
             event.preventDefault()
 
             btnListRecomendaValue = event.target.value
+            // btnListRecomenda.classList.add('clicado')
         })
     })
 
@@ -43,7 +44,10 @@ window.addEventListener('load', () => {
 
     btnEnviar.addEventListener('click', (event) => {
         event.preventDefault()
+        let canSubmit = false
+        
         if (nomeInput.value.length < 2) {
+            canSubmit = false
 
             let erro = document.createElement('p');
             let msg = document.createTextNode('Preencha um nome válido')
@@ -52,14 +56,16 @@ window.addEventListener('load', () => {
             nomeInput.insertAdjacentElement("afterend", erro);  
         }
         if (emailInput.value.length < 10 || emailInput.value.length > 180 || !emailInput.value.includes('.') || !emailInput.value.includes('@')) {
-
+            canSubmit = false
+            
             let erro = document.createElement('p');
             let msg = document.createTextNode('Preencha o email de forma correta, < 10, > 180, incluindo . e @')
             erro.appendChild(msg);
             emailInput.innerHTML='';
             emailInput.insertAdjacentElement("afterend", erro);   
         }
-        else if (!btnListRecomendaValue || !btnListFacilValue || !btnListUtilValue) {
+        if (!btnListRecomendaValue || !btnListFacilValue || !btnListUtilValue) {
+            canSubmit = false
 
             let erro = document.createElement('p');
             let msg = document.createTextNode('Marque uma nota para cada uma das perguntas')
@@ -69,6 +75,8 @@ window.addEventListener('load', () => {
 
         }
         else {
+            canSubmit = true
+
             let tagp = document.querySelector('#form p');
             tagp.innerHTML='';
         }
@@ -89,7 +97,10 @@ window.addEventListener('load', () => {
             }
         })
 
-        form.submit();
+        if (canSubmit) {
+            form.submit();
+        }
+        // form.submit();
 
     })
 })           
