@@ -264,18 +264,7 @@
   }],
 
   "tutorials": [
-    {
-      "foto": "/app/img/fotos linguagens/Bootstrap.png",
-      "descricao": "alguma descricao",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-
-    },
-    {
-      "foto": "/app/img/fotos linguagens/C.png",
-      "descricao": "alguma descricao",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-
-    }, 
+    
     {
       "foto": "/app/img/fotos linguagens/c#.png",
       "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
@@ -288,23 +277,13 @@
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
     {
-      "foto": "/app/img/fotos linguagens/CSS.png",
-      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    },
-    {
       "foto": "/app/img/fotos linguagens/Dart.png",
-      "descricao": "alguma descricao",
+      "descricao": "Dart é uma linguagem de programação apresentada pelo Google, em 2011, com o objetivo de substituir o JavaScript como principal linguagem embutida nos navegadores. Programas nesta linguagem podem tanto serem executados em uma máquina virtual quanto compilados para JavaScript.",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
-    {
-      "foto": "/app/img/fotos linguagens/Delphi.png",
-      "descricao": "alguma descricao",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    }, 
     {
       "foto": "/app/img/fotos linguagens/elixir.png",
-      "descricao": "alguma descricao",
+      "descricao": "Elixir é uma linguagem de programação funcional, concorrente, de propósito geral que executa na máquina virtual Erlang (BEAM). Elixir compila em cima de Erlang para fornecer aplicações distribuídas, em tempo real suave, tolerante a falhas, non-stop.",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
     {
@@ -313,23 +292,13 @@
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
     {
-      "foto": "/app/img/fotos linguagens/HTML.jpg",
-      "descricao": "alguma descricao",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    },
-    {
       "foto": "/app/img/fotos linguagens/Java.png",
       "descricao": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM).",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
     {
-      "foto": "/app/img/fotos linguagens/JQuery.jpeg",
-      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    },
-    {
       "foto": "/app/img/fotos linguagens/Julia.png",
-      "descricao": "alguma descricao",
+      "descricao": "Julia é uma linguagem de programação dinâmica de alto nível, projetada para atender os requisitos da computação de alto desempenho numérico e científico, sendo também eficaz para a programação de propósito geral.",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
     {
@@ -345,16 +314,6 @@
     {
       "foto": "/app/img/fotos linguagens/php.png",
       "descricao": "PHP é uma linguagem interpretada livre, capaz de gerar conteúdo dinâmico na World Wide Web. Figura entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de arquivos externos para eventuais processamentos de dados.",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    },
-    {
-      "foto": "/app/img/fotos linguagens/R.jpeg",
-      "descricao": "alguma descricao",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    },
-    {
-      "foto": "/app/img/fotos linguagens/React.png",
-      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     },
     {
@@ -380,11 +339,6 @@
     {
       "foto": "/app/img/fotos linguagens/Swift.png",
       "descricao": "Swift é uma  linguagem de programação desenvolvida pela Apple para desenvolvimento no iOS, macOS, watchOS, tvOS e Linux. Swift foi desenvolvida para manter compatibilidade com a API Cocoa e com código existente em Objective-C.",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-    }, 
-    {
-      "foto": "/app/img/fotos linguagens/TypeScript.png",
-      "descricao": "alguma descricao",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     }
   ]
