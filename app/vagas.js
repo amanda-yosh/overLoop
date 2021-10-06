@@ -5,10 +5,10 @@ window.onload = function () {
     let sectionContent = document.querySelector("section.content");
     let arrayObjJson = [];
 
-    let numberOfItems = arrayObjJson.length;
+    let numberOfItems = 9;
     const numberPerPage = 9;
     let currentPage = 1;
-    let numberOfPages = Math.ceil(numberOfItems / numberPerPage);
+    let numberOfPages = 1;
 
     const containerPaginacao = document.querySelector(".container-paginacao .paginacao");
 
@@ -29,11 +29,15 @@ window.onload = function () {
         http.onreadystatechange = function () {
             if (http.readyState == 4 && http.status == 200) {
                 // console.log(JSON.parse(http.responseText));
-                showVagas(JSON.parse(http.responseText).jobs);
+                // showVagas(JSON.parse(http.responseText).jobs);
                 arrayObjJson = JSON.parse(http.responseText).jobs;
                 // console.log(JSON.parse(http.responseText).jobs)
 
-                buildPage(currentPage);
+                numberOfItems = arrayObjJson.length;
+                numberOfPages = Math.ceil(numberOfItems / numberPerPage);
+
+                buildPagination(currentPage, arrayObjJson, numberOfItems)
+                // buildPage(currentPage);
             }
         };
 
@@ -76,111 +80,131 @@ window.onload = function () {
         callAPI(params);
     });
 
-    function buildPage(currentPage) {
-        const trimStart = (currentPage - 1) * numberPerPage;
-        const trimEnd = trimStart + numberPerPage;
-        // console.log(arrayObjJson.slice(trimStart, trimEnd))
-        return arrayObjJson.slice(trimStart, trimEnd);
-    }
+    // function buildPage(currentPage) {
+    //     const trimStart = (currentPage - 1) * numberPerPage;
+    //     const trimEnd = trimStart + numberPerPage;
+    //     // console.log(arrayObjJson.slice(trimStart, trimEnd))
+    //     return arrayObjJson.slice(trimStart, trimEnd);
+    // }
 
-    function buildPagination(currentPage) {
+    function buildPagination(currentPage, arrayObjJson, numberOfItems) {
+        // console.log(typeof numberOfItems)
+
+        paginate(arrayObjJson, numberOfItems, currentPage)
         containerPaginacao.innerHTML = "";
+        const currPageNum = accomodatePage(currentPage)
 
-        for (let i = 0; i < numberOfPages; i++) {
+        for (let i = 1; i < numberOfItems + 1; i++) {
             const buttonEl = document.createElement("button"); //`<button></button>`
-            buttonEl.value = `${i + 1}`;
-            buttonEl.innerHTML = `${i + 1}`; //`<button>${i+1}</button>`
+            buttonEl.value = `${currentPage.pages[i]}`;
+            buttonEl.innerHTML = `${currentPage.pages[i]}`; //`<button>${i+1}</button>`
+            buttonEl.setAttribute('value', `${currentPage.pages[i]}`)
             containerPaginacao.appendChild(buttonEl);
 
             // containerPaginacao.append(`<button value="${i+1}">${i+1}</button>`)
         }
+        
+        // if (numberOfPages >= 3) {
+        //     for (let i = -1; i < 2; i++) {
+        //         const buttonEl = document.createElement("button"); //`<button></button>`
+        //         buttonEl.value = `${currPageNum + 1}`;
+        //         buttonEl.innerHTML = `${currPageNum + 1}`; //`<button>${i+1}</button>`
+        //         buttonEl.setAttribute('value', `${i+1}`)
+        //         containerPaginacao.appendChild(buttonEl);
+    
+        //         // containerPaginacao.append(`<button value="${i+1}">${i+1}</button>`)
+        //     }
+        // } else {
+        //     // para quando forem mais de 3 paginas
+        //     for (let i = 0; i < numberOfPages; i++) {
+        //         const buttonEl = document.createElement("button"); //`<button></button>`
+        //         buttonEl.value = `${1 + i}`;
+        //         buttonEl.innerHTML = `${1 + i}`; //`<button>${i+1}</button>`
+        //         buttonEl.setAttribute('value', `${i+1}`)
+        //         containerPaginacao.appendChild(buttonEl);
 
-        // para quando forem mais de 3 paginas
-        for (let i = 0; i < 3; i++) {
-            const buttonEl = document.createElement("button"); //`<button></button>`
-            buttonEl.value = `${currentPage + i}`;
-            buttonEl.innerHTML = `${currentPage + i}`; //`<button>${i+1}</button>`
-            containerPaginacao.appendChild(buttonEl);
+        //         // containerPaginacao.append(`<button value="${currentPage+i}">${currentPage+i}</button>`)
+        //     }
+        // }
+    }
 
-            // containerPaginacao.append(`<button value="${currentPage+i}">${currentPage+i}</button>`)
-        }
+    function accomodatePage(clickedPage) {
+        if (clickedPage <= 1) { return clickedPage + 1}
+        if (clickedPage >= numberOfPages) { return clickedPage -1}
+        return clickedPage
     }
 
     //escutando o evento de clique
 
-    buildPage(1);
-    buildPagination(currentPage);
+    // buildPage(1);
+    buildPagination(paginate(numberOfItems));
     const buttonPaginado = containerPaginacao.querySelector('button')
-    buttonPaginado.addEventListener("click", () => {
-        let clickedPage = parseInt(this.value);
-        buildPage(clickedPage);
-        buildPagination(numberOfPages);
+    
+    buttonPaginado.addEventListener("click", (e) => {
+        let clickedPage = parseInt(e.target.value);
+        // buildPage(clickedPage);
+        buildPagination(paginate(numberOfItems));
     });
-    //     containerPaginacao.on('click', 'button', function() {
-    //         var clickedPage = parseInt($(this).val())
-    //         buildPage(clickedPage)
-    //         buildPagination(clickedPage, numberOfPages)
-    //    });
 
-    // window.onload = function() {
-    //     changePage(1);
-    // };
-
-    // let current_page = 1;
-    // let records_per_page = 9;
-
-    // function prevPage() {
-    //     if (current_page > 1) {
-    //         current_page--;
-    //         changePage(current_page);
-    //     }
-    // }
-
-    // function nextPage() {
-    //     if (current_page < numPages()) {
-    //         current_page++;
-    //         changePage(current_page);
-    //     }
-    // }
-
-    // function changePage(page) {
-    //     let btn_next = document.getElementById("btn_next");
-    //     let btn_prev = document.getElementById("btn_prev");
-    //     let listing_table = document.getElementById("listingTable");
-    //     let page_span = document.getElementById("page");
-
-    //     // Validate page
-    //     if (page < 1) page = 1;
-    //     if (page > numPages()) page = numPages();
-
-    //     listing_table.innerHTML = "";
-
-    //     for (var i = (page-1) * records_per_page; i < (page * records_per_page); i++) {
-    //         listing_table.innerHTML += objJson[i].adName + "<br>";
-    //     }
-    //     page_span.innerHTML = page;
-
-    //     if (page == 1) {
-    //         btn_prev.style.visibility = "hidden";
-    //     } else {
-    //         btn_prev.style.visibility = "visible";
-    //     }
-
-    //     if (page == numPages()) {
-    //         btn_next.style.visibility = "hidden";
-    //     } else {
-    //         btn_next.style.visibility = "visible";
-    //     }
-    // }
-
-    // function numPages()
-    // {
-    //     return Math.ceil(objJson.length / records_per_page);
-    // }
-
-    // for (let i = 0; i < numPages(); i++) {
-    //     containerPaginacao.innerHTML = `
-    //     <button class="button1">${i}</button>
-    // `
-    // }
+    function paginate(
+        listVagas = [],
+        totalItems,
+        currentPage = 1,
+        pageSize = 9,
+        maxPages = 6
+    ) {
+        // calculate total pages
+        let totalPages = Math.ceil(totalItems / pageSize);
+    
+        // ensure current page isn't out of range
+        if (currentPage < 1) {
+            currentPage = 1;
+        } else if (currentPage > totalPages) {
+            currentPage = totalPages;
+        }
+    
+        let startPage, endPage;
+        if (totalPages <= maxPages) {
+            // total pages less than max so show all pages
+            startPage = 1;
+            endPage = totalPages;
+        } else {
+            // total pages more than max so calculate start and end pages
+            let maxPagesBeforeCurrentPage = Math.floor(maxPages / 2);
+            let maxPagesAfterCurrentPage = Math.ceil(maxPages / 2) - 1;
+            if (currentPage <= maxPagesBeforeCurrentPage) {
+                // current page near the start
+                startPage = 1;
+                endPage = maxPages;
+            } else if (currentPage + maxPagesAfterCurrentPage >= totalPages) {
+                // current page near the end
+                startPage = totalPages - maxPages + 1;
+                endPage = totalPages;
+            } else {
+                // current page somewhere in the middle
+                startPage = currentPage - maxPagesBeforeCurrentPage;
+                endPage = currentPage + maxPagesAfterCurrentPage;
+            }
+        }
+    
+        // calculate start and end item indexes
+        let startIndex = (currentPage - 1) * pageSize;
+        let endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
+    
+        // create an array of pages to ng-repeat in the pager control
+        let pages = Array.from(Array((endPage + 1) - startPage).keys()).map(i => startPage + i);
+    
+        // return object with all pager properties required by the view
+        return {
+            totalItems: totalItems,
+            currentPage: currentPage,
+            pageSize: pageSize,
+            totalPages: totalPages,
+            startPage: startPage,
+            endPage: endPage,
+            startIndex: startIndex,
+            endIndex: endIndex,
+            pages: pages
+        };
+    }
 };
