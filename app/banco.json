@@ -263,12 +263,7 @@
 
   }],
 
-  "tutorials": [{
-      "foto": "/app/img/fotos linguagens/Bootstrap.png",
-      "descricao": "alguma descricao",
-      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-
-    },
+  "tutorials": [
     {
       "foto": "/app/img/fotos linguagens/Bootstrap.png",
       "descricao": "alguma descricao",
@@ -276,21 +271,121 @@
 
     },
     {
-      "foto": "/app/img/fotos linguagens/Bootstrap.png",
+      "foto": "/app/img/fotos linguagens/C.png",
       "descricao": "alguma descricao",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/c#.png",
+      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
 
     },
     {
-      "foto": "/app/img/fotos linguagens/Bootstrap.png",
+      "foto": "/app/img/fotos linguagens/C++.png",
+      "descricao": "C++ é uma linguagem de programação compilada multiparadigma (seu suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/CSS.png",
+      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Dart.png",
       "descricao": "alguma descricao",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-
-    }, {
-      "foto": "/app/img/fotos linguagens/Bootstrap.png",
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Delphi.png",
       "descricao": "alguma descricao",
       "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
-
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/elixir.png",
+      "descricao": "alguma descricao",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Go.png",
+      "descricao": "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/HTML.jpg",
+      "descricao": "alguma descricao",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Java.png",
+      "descricao": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM).",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/JQuery.jpeg",
+      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Julia.png",
+      "descricao": "alguma descricao",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Lua.png",
+      "descricao": "Lua é uma linguagem de programação eficiente e leve, projetada para estender aplicações. Ela permite programação procedural, programação orientada a objetos, programação funcional, programação orientada a dados e descrição de dados.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Perl.png",
+      "descricao": "Perl é uma linguagem de programação de alto nível, gratuita, bastante utilizada em aplicações CGI para web, de tipagem dinâmica, estruturada, com suporte a orientação a objetos, multi-plataforma, que foi desenvolvida principalmente para manipulação de strings.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/php.png",
+      "descricao": "PHP é uma linguagem interpretada livre, capaz de gerar conteúdo dinâmico na World Wide Web. Figura entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de arquivos externos para eventuais processamentos de dados.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/R.jpeg",
+      "descricao": "alguma descricao",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/React.png",
+      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Ruby.png",
+      "descricao": "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada para ser usada como linguagem de script.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Rust.png",
+      "descricao": "Rust é uma linguagem de programação multiparadigma compilada, desenvolvida pela Mozilla Research. É projetada para ser segura, concorrente e prática.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/Scala.png",
+      "descricao": "Scala (Scalabel Language) é uma linguagem de programação de propósito geral baseado em dois paradigmas: o orientado a objetos e funcional. Ela é fortemente baseada no Java, mas inclui uma série de requisitos, principalmente retirados de linguagens funcionais, para deixar o desenvolvimento de aplicações mais simples do que em Java. Scala roda na máquina virtual Java, e isso traz a vantagem de permitir o uso de classes e métodos Java em um programa Scala, e vice e versa.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/SQL.png",
+      "descricao": "SQL (Structured Query Language, ou Linguagem de Consulta Estruturada) é a linguagem de pesquisa declarativa padrão para banco de dados relacional. Muitas das características originais do SQL foram inspiradas na álgebra relacional.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Swift.png",
+      "descricao": "Swift é uma  linguagem de programação desenvolvida pela Apple para desenvolvimento no iOS, macOS, watchOS, tvOS e Linux. Swift foi desenvolvida para manter compatibilidade com a API Cocoa e com código existente em Objective-C.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/TypeScript.png",
+      "descricao": "alguma descricao",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     }
   ]
 }
