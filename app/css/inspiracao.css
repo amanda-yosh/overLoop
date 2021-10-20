@@ -149,13 +149,13 @@ button.call-to-action a {
     padding: 10px 100px;
 }
 
-.noticias .container article {
+/* .noticias .container article {
     padding: 40px 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 .noticias .container article .image img {
     background-color: #B1B1B1;

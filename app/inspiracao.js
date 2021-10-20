@@ -1,4 +1,6 @@
-const api_key = 'b600c122-75d0-4c03-bcd2-684c5f16eb3e'
+window.onload = () => {
+
+    const api_key = 'b600c122-75d0-4c03-bcd2-684c5f16eb3e'
 
 // let url = `https://content.guardianapis.com/sections?q=technology&api-key=${api_key}`
 
@@ -44,12 +46,18 @@ function showNews(newsList) {
             </div>
         `
         // dia / mes / ano
-        console.log(webPublicationDate.slice(0, 10).split('-').reverse().join('-'))
+        //console.log(webPublicationDate.slice(0, 10).split('-').reverse().join('-'))
         //typeof -> string
 
         // console.log(article)
-        article[0].appendChild(newsElement)
+        article[0].appendChild(newsElement);
+
+        newsElement.style.cssText = "display: flex; margin: 30px 0";
     });
 }
 
 
+
+
+
+}
