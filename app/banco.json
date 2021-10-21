@@ -1,6 +1,5 @@
 {
-  "posts": [
-    {
+  "posts": [{
       "id": 1,
       "nome": "Tais",
       "email": "taisbruno@id.uff.br",
@@ -39,6 +38,308 @@
       "notaUtil": "7",
       "notaFacil": "7",
       "id": 5
+    }
+  ],
+  "jobs": [{
+    "title": "IT",
+    "location": "Buena Park, CA",
+    "snippet": "]]\r\n Overview: \r\n Maintains and installs Point of Sale registers, desktop and laptop computers, and peripherals; performs user support tasks. \r\n\r\n How You'll Make A Difference: \r\n\r\n\r\n Takes, prioritizes and documents help desk calls; troubleshoots computer issues and resolve...",
+    "salary": "",
+    "source": "appcast.io",
+    "type": "",
+    "link": "https://jooble.org/desc/725875831078344294?ckey=it&rgn=-1&pos=1&elckey=5925206999003442938&p=1&age=129&relb=169&brelb=115&bscr=3706.3782&scr=5446.764485217392",
+    "company": "Knott's Berry Farm",
+    "updated": "2021-10-01T00:00:00.0000000",
+    "id": 725875831078344294
+  }, {
+    "title": "IT Engineer",
+    "location": "Miami-Dade County, FL",
+    "snippet": "]] Working within the Corporate <b>IT </b>Infrastructure team, the Infrastructure Analyst will assist in the design and operational support of Radancy’s global infrastructure. This role will be responsible for the performance, operations, and maintenance of our global business...&nbsp;",
+    "salary": "",
+    "source": "adzuna.co.uk",
+    "type": "",
+    "link": "https://jooble.org/desc/-5402026538039827472?ckey=it&rgn=-1&pos=2&elckey=5925206999003442938&p=1&age=33&relb=175&brelb=115&bscr=3545.1782&scr=5394.836391304348",
+    "company": "Radancy",
+    "updated": "2021-10-05T22:13:27.6030000",
+    "id": -5402026538039827472
+  }, {
+    "title": "IT Technician",
+    "location": "Dallas, TX",
+    "snippet": "&nbsp;...Job Description \r\n Job description \r\n <b>IT </b>Technician \r\n ProCollect is currently looking for a new system administrator. We provide a competitive salary and benefits package that includes medical, dental and vision coverage. We are actively seeking someone with a technical...&nbsp;",
+    "salary": "",
+    "source": "ziprecruiter.com",
+    "type": "",
+    "link": "https://jooble.org/desc/2257984628769385412?ckey=it&rgn=-1&pos=3&elckey=5925206999003442938&p=1&age=33&relb=171&brelb=115&bscr=3547.6414&scr=5275.188516521739",
+    "company": "ProCollect Inc.",
+    "updated": "2021-10-05T15:44:10.1036998+03:00",
+    "id": 2257984628769385412
+  }, {
+    "title": "IT Technician",
+    "location": "Jupiter, FL",
+    "snippet": "&nbsp;...Job Description  Are you an <b>IT </b>Technician with excellent customer service, communication skills and at least 2 years of IT support job experience?\r\n Are you looking for a company with an excellent reputation in the local area?\r\n Are you looking for a position with great...&nbsp;",
+    "salary": "",
+    "source": "ziprecruiter.com",
+    "type": "",
+    "link": "https://jooble.org/desc/8699221080389334836?ckey=it&rgn=-1&pos=4&elckey=5925206999003442938&p=1&age=57&relb=170&brelb=115&bscr=3546.1833&scr=5242.184008695653",
+    "company": "Allstate Computers, LLC",
+    "updated": "2021-10-04T00:00:00.0000000",
+    "id": 8699221080389334836
+  }, {
+    "title": "IT Recruiter",
+    "location": "Palo Alto, CA",
+    "snippet": "\r\n\r\n Adecco is currently assisting a local client, recruiting for Talent Acquisition Consultant Jobs, located in Palo Alto, CA.  These Talent Acquisition Consultant Jobs are temp to hire opportunities, with starting pay rates of $45, plus overtime!  For instant consideration...",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-2228299203532626500?ckey=it&rgn=-1&pos=5&elckey=5925206999003442938&p=1&age=53&relb=165&brelb=115&bscr=3545.0122&scr=5086.321852173914",
+    "company": "Adecco USA",
+    "updated": "2021-10-04T03:48:43.0870000",
+    "id": -2228299203532626500
+  }, {
+    "title": "IT Recruiter",
+    "location": "Livonia, MI",
+    "snippet": "&nbsp;...internationally and growing. \r\n Clients range from household names like Google and Facebook to emerging tech start-ups. \r\n\r\n Senior <b>IT </b>Recruiter - Contract Technology Division \r\n As a Senior Technology Recruiter, you will partner with the Business Development team to...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-6986580431390200408?ckey=it&rgn=-1&pos=6&elckey=5925206999003442938&p=1&age=53&relb=165&brelb=115&bscr=3544.9297&scr=5086.203482608696",
+    "company": "Vaco Technology",
+    "updated": "2021-10-04T03:27:21.5700000",
+    "id": -6986580431390200408
+  }, {
+    "title": "IT Trainer",
+    "location": "Washington DC",
+    "snippet": "]] About Highlight:  Know Way. Know How. \r\n For over ten years, Highlight has provided Development and Modernization, Secure <b>IT </b>and Mission Solutions for our federal government customers. We know the technology; we understand the way our customers and their stakeholders...&nbsp;",
+    "salary": "",
+    "source": "appcast.io",
+    "type": "",
+    "link": "https://jooble.org/desc/3128667365011763539?ckey=it&rgn=-1&pos=7&elckey=5925206999003442938&p=1&age=33&relb=160&brelb=115&bscr=3549.2695&scr=4938.1140869565215",
+    "company": "Highlight Technologies",
+    "updated": "2021-10-05T07:30:54.3270000",
+    "id": 3128667365011763539
+  }, {
+    "title": "IT Generalist",
+    "location": "Hudsonville, MI",
+    "snippet": "Position: <b>IT </b>Generalist\r\nOur client is experiencing tremendous growth within their organization, and is seeking to add a full-time permanent IT Generalist to their team in the Grand Rapids, MI area! Here are a few reasons you should apply:\r\n~Ranked in the Top 100 fastest...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-1777347499363246694?ckey=it&rgn=-1&pos=8&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3547.0964&scr=4935.090643478261",
+    "company": "Creative Financial Staffing",
+    "updated": "2021-10-04T03:52:32.5930000",
+    "id": -1777347499363246694
+  }, {
+    "title": "IT Specialist",
+    "location": "Lansing, MI",
+    "snippet": "]] Position:  <b>IT </b>Specialist \r\n Our client is well respected associations throughout the state of Michigan, and are located in  Lansing, MI  . They are seeking a full-time, permanent  IT Specialist  to be an integral part of their Associations technology success!\r\n Forward...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/497205004237344876?ckey=it&rgn=-1&pos=9&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3547.0276&scr=4934.99492173913",
+    "company": "Creative Financial Staffing",
+    "updated": "2021-10-04T03:34:49.8630000",
+    "id": 497205004237344876
+  }, {
+    "title": "IT Developer",
+    "location": "Richfield, MN",
+    "snippet": "&nbsp;...Genesis10 is seeking a <b>IT </b>Developer for a contract position with our client in a Minneapolis, MN suburb. Work may be remote to start. \r\n Summary / Responsibilities: \r\n Operations manager who is responsible for supporting 5-8 product teams across logistics and reverse...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-5858412686765457294?ckey=it&rgn=-1&pos=10&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3546.9988&scr=4934.9548521739125",
+    "company": "Genesis10",
+    "updated": "2021-10-04T03:27:21.2430000",
+    "id": -5858412686765457294
+  }, {
+    "title": "IT Coordinator",
+    "location": "Warren, MI",
+    "snippet": "&nbsp;...JOB DESCRIPTION \r\n The <b>IT </b>Coordinator gathers requirements and delivers solutions typically using more defined structures or processes. Typically responsible or co-responsible for a single technology sub-set or equivalent related to applications, infrastructure, or broader...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/7499831058543175062?ckey=it&rgn=-1&pos=11&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3546.998&scr=4934.953739130436",
+    "company": "Adient",
+    "updated": "2021-10-04T03:27:09.7100000",
+    "id": 7499831058543175062
+  }, {
+    "title": "IT Tech",
+    "location": "Wilmington, DE",
+    "snippet": " Responsible for assistance in maintaining the operation of desktops/laptops, mobile devices, e-mail, printers, copiers, Internet connections and telephones. \r\n \r\n  ESSENTIAL DUTIES AND RESPONSIBILITIES \r\n \r\n  Daily administration of an existing network environment \r\n \r...",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-4820664068674843033?ckey=it&rgn=-1&pos=12&elckey=5925206999003442938&p=1&age=54&relb=160&brelb=115&bscr=3546.9614&scr=4934.902817391305",
+    "company": "Children & Families First",
+    "updated": "2021-10-04T03:17:43.1800000",
+    "id": -4820664068674843033
+  }, {
+    "title": "IT Manager",
+    "location": "San Jose, CA",
+    "snippet": "&nbsp;...strengthen the resilience and hope of our diverse community members by improving their health and well-being. Reporting to the CFO, the <b>IT </b>manager will be responsible for agency’s entire IT infrastructure and data management needs. About Job Manage a team of 5 IT...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/6698222099951729969?ckey=it&rgn=-1&pos=13&elckey=5925206999003442938&p=1&age=54&relb=160&brelb=115&bscr=3546.96&scr=4934.900869565217",
+    "company": "AACI",
+    "updated": "2021-10-04T03:17:20.8830000",
+    "id": 6698222099951729969
+  }, {
+    "title": "IT Manager",
+    "location": "Philadelphia, PA",
+    "snippet": "&nbsp;...per year \r\n A bit about us: \r\n Our client, a nationally recognized litigation law firm based in Philadelphia is looking to hiring an <b>IT </b>Manager. \r\n Why join us?\r\n Medical \r\n Dental \r\n Vision \r\n Matching 401K \r\n LTD/STD \r\n Life \r\n Job Details \r\n Summary : \r\n Manages entire...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/4372799667032671438?ckey=it&rgn=-1&pos=14&elckey=5925206999003442938&p=1&age=54&relb=160&brelb=115&bscr=3546.9165&scr=4934.840347826087",
+    "company": "Jobot",
+    "updated": "2021-10-04T03:06:11.6170000",
+    "id": 4372799667032671438
+  }, {
+    "title": "IT Manager",
+    "location": "Kirkland, WA",
+    "snippet": "&nbsp;...<b>IT </b>Manager opening with potential to step into Sr. Manager for growing electronics company!\r\n This Jobot Job is hosted by: Matt Swaneveld \r\n Are you a fit? Easy Apply now by clicking the \"Apply on company site\" button and sending us your resume. \r\n Salary: $150,000 -...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-6120037259479888098?ckey=it&rgn=-1&pos=15&elckey=5925206999003442938&p=1&age=54&relb=160&brelb=115&bscr=3546.8818&scr=4934.792069565217",
+    "company": "Jobot",
+    "updated": "2021-10-04T02:57:16.2970000",
+    "id": -6120037259479888098
+  }, {
+    "title": "IT Positions",
+    "location": "Frisco, TX",
+    "snippet": " IT POSITIONS \r\n  Cyber Infotech LLC \r\n \r\n \r\n  SOFTWARE DEVELOPER (5 positions): Frisco, TX & various unanticipated locations throughout the U.S.: Gather business requirements and prepare software requirement specification documents. Design and develop webpages and user...",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-2613916325954223993?ckey=it&rgn=-1&pos=16&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3545.028&scr=4932.212869565217",
+    "company": "Precision Ad Placement",
+    "updated": "2021-10-04T03:52:49.8730000",
+    "id": -2613916325954223993
+  }, {
+    "title": "IT Sales",
+    "location": "Chesterfield, MO",
+    "snippet": "&nbsp;...Location: Western St. Louis/Chesterfield area \r\n   Full time, direct hire  \r\n   Remote 3 days/wk, onsite 2 days/wk  \r\n  Our client, a <b>IT </b>company (software, hardware, infrastructure, services) that works with medium to enterprise sized companies is looking for a junior...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-7435951564908281109?ckey=it&rgn=-1&pos=17&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3544.9941&scr=4932.165704347826",
+    "company": "TTS Technologies",
+    "updated": "2021-10-04T03:44:02.6700000",
+    "id": -7435951564908281109
+  }, {
+    "title": "IT Technician",
+    "location": "Beaverton, OR",
+    "snippet": "&nbsp;...No Visa or Sponsorship available \r\n CFS Technology has been contacted by a longtime client that has a long term need for a talented  <b>IT </b>Technician  . This is a unique position working alongside a tight knit team. Each day will be different as you work alongside with others...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-4961062974943982137?ckey=it&rgn=-1&pos=18&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3544.991&scr=4932.161391304348",
+    "company": "Creative Financial Staffing",
+    "updated": "2021-10-04T03:43:14.1100000",
+    "id": -4961062974943982137
+  }, {
+    "title": "IT Technician",
+    "location": "Lemont, IL",
+    "snippet": "&nbsp;...the internet for solutions to problems not documented in the KB. \r\n Document break/fix procedures. \r\n Work closely with all Corporate <b>IT </b>support teams \r\n\r\n Equal Opportunity Employer/Protected Veterans/Individuals with Disabilities \r\n The contractor will not discharge...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-6754765605489904846?ckey=it&rgn=-1&pos=19&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3544.9539&scr=4932.109773913043",
+    "company": "Timberline Knolls",
+    "updated": "2021-10-04T03:33:40.1000000",
+    "id": -6754765605489904846
+  }, {
+    "title": "IT Auditor",
+    "location": "Sandy Springs, GA",
+    "snippet": "&nbsp;...Jefferson Wells  is looking for  <b>IT </b>Auditors  to add to our Risk Advisory Practice. \r\n Whether you're ready for a change today or considering one in the future, we would love to hear from you. Besides gaining valuable experience with one of the most reputable organizations...&nbsp;",
+    "salary": "",
+    "source": "Careerbuilder.com",
+    "type": "",
+    "link": "https://jooble.org/desc/-2956786002709356446?ckey=it&rgn=-1&pos=20&elckey=5925206999003442938&p=1&age=53&relb=160&brelb=115&bscr=3544.9512&scr=4932.106017391305",
+    "company": "Jefferson Wells - a ManpowerGroup Company",
+    "updated": "2021-10-04T03:32:57.5470000",
+    "id": -2956786002709356446
+
+  }],
+
+  "tutorials": [
+    
+    {
+      "foto": "/app/img/fotos linguagens/c#.png",
+      "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+
+    },
+    {
+      "foto": "/app/img/fotos linguagens/C++.png",
+      "descricao": "C++ é uma linguagem de programação compilada multiparadigma (seu suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Dart.png",
+      "descricao": "Dart é uma linguagem de programação apresentada pelo Google, em 2011, com o objetivo de substituir o JavaScript como principal linguagem embutida nos navegadores. Programas nesta linguagem podem tanto serem executados em uma máquina virtual quanto compilados para JavaScript.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/elixir.png",
+      "descricao": "Elixir é uma linguagem de programação funcional, concorrente, de propósito geral que executa na máquina virtual Erlang (BEAM). Elixir compila em cima de Erlang para fornecer aplicações distribuídas, em tempo real suave, tolerante a falhas, non-stop.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Go.png",
+      "descricao": "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Java.png",
+      "descricao": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM).",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Julia.png",
+      "descricao": "Julia é uma linguagem de programação dinâmica de alto nível, projetada para atender os requisitos da computação de alto desempenho numérico e científico, sendo também eficaz para a programação de propósito geral.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Lua.png",
+      "descricao": "Lua é uma linguagem de programação eficiente e leve, projetada para estender aplicações. Ela permite programação procedural, programação orientada a objetos, programação funcional, programação orientada a dados e descrição de dados.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Perl.png",
+      "descricao": "Perl é uma linguagem de programação de alto nível, gratuita, bastante utilizada em aplicações CGI para web, de tipagem dinâmica, estruturada, com suporte a orientação a objetos, multi-plataforma, que foi desenvolvida principalmente para manipulação de strings.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/php.png",
+      "descricao": "PHP é uma linguagem interpretada livre, capaz de gerar conteúdo dinâmico na World Wide Web. Figura entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de arquivos externos para eventuais processamentos de dados.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Ruby.png",
+      "descricao": "Ruby é uma linguagem de programação interpretada multiparadigma, de tipagem dinâmica e forte, com gerenciamento de memória automático, originalmente planejada para ser usada como linguagem de script.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Rust.png",
+      "descricao": "Rust é uma linguagem de programação multiparadigma compilada, desenvolvida pela Mozilla Research. É projetada para ser segura, concorrente e prática.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    }, 
+    {
+      "foto": "/app/img/fotos linguagens/Scala.png",
+      "descricao": "Scala (Scalabel Language) é uma linguagem de programação de propósito geral baseado em dois paradigmas: o orientado a objetos e funcional. Ela é fortemente baseada no Java, mas inclui uma série de requisitos, principalmente retirados de linguagens funcionais, para deixar o desenvolvimento de aplicações mais simples do que em Java. Scala roda na máquina virtual Java, e isso traz a vantagem de permitir o uso de classes e métodos Java em um programa Scala, e vice e versa.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/SQL.png",
+      "descricao": "SQL (Structured Query Language, ou Linguagem de Consulta Estruturada) é a linguagem de pesquisa declarativa padrão para banco de dados relacional. Muitas das características originais do SQL foram inspiradas na álgebra relacional.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
+    },
+    {
+      "foto": "/app/img/fotos linguagens/Swift.png",
+      "descricao": "Swift é uma  linguagem de programação desenvolvida pela Apple para desenvolvimento no iOS, macOS, watchOS, tvOS e Linux. Swift foi desenvolvida para manter compatibilidade com a API Cocoa e com código existente em Objective-C.",
+      "link": ["https://youtube.com", "https://facebook.com", "https://instagram.com"]
     }
   ]
 }
